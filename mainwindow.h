@@ -1,11 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "employe.h"
+#include "conge.h"
 #include <QMainWindow>
-#include "vehicule.h"
-#include "panne.h"
-#include "smtp.h"
-#include <QString>
 
 
 QT_BEGIN_NAMESPACE
@@ -21,38 +18,50 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_pb_ajouter_5_clicked();
 
-    void on_pushButton_3_clicked();
+    void on_pb_ajouter_6_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_pb_ajouter_7_clicked();
 
-    void on_pushButton_4_clicked();
 
-    void on_pushButton_5_clicked();
 
-    void on_pushButton_6_clicked();
+    void on_ajoute_cong_clicked();
 
-    void on_pushButton_7_clicked();
+    void on_ajoute_cong_2_clicked();
 
-    void on_pushButton_8_clicked();
+    void on_pb_ajouter_8_clicked();
 
-    void on_pushButton_9_clicked();
+    void on_pb_ajouter_9_clicked();
 
-    void on_pushButton_10_clicked();
+    void on_ajoute_cong_3_clicked();
 
-    void on_pushButton_11_clicked();
+    void on_pb_ajouter_10_clicked();
 
-    void on_pushButton_12_clicked();
+    void on_pb_ajouter_11_clicked();
 
-    void on_pushButton_13_clicked();
+    void on_radioButton_23_clicked();
+
+    void on_radioButton_23_toggled(bool checked);
+
+    void on_radioButton_24_toggled(bool checked);
+
+    void on_radioButton_27_toggled(bool checked);
+
+    void on_groupBox_5_toggled(bool arg1);
+
+    void on_radioButton_28_toggled(bool checked);
+
+    void on_radioButton_25_toggled(bool checked);
 
     void sendMail();
     void mailSent(QString);
 
 private:
     Ui::MainWindow *ui;
-     vehicule tmpvehicule;
-     panne tmppanne;
+    Employe tmpemploye;
+
+    Conge  tmpconge;
+
 };
 #endif // MAINWINDOW_H
