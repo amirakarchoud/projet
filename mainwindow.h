@@ -1,9 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "employe.h"
-#include "conge.h"
-#include <QMainWindow>
 
+#include <QMainWindow>
+#include "abonne.h"
+#include "abonnement.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,50 +18,53 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pb_ajouter_5_clicked();
+    void on_pb_ajouter_clicked();
 
-    void on_pb_ajouter_6_clicked();
+    void on_pb_supprimer_clicked();
 
-    void on_pb_ajouter_7_clicked();
+    void on_pb_ajouter_2_clicked();
 
+    void on_pb_supprimer_2_clicked();
 
+    void on_pushButton_9_clicked();
 
-    void on_ajoute_cong_clicked();
+    void on_pushButton_modif_client_clicked();
 
-    void on_ajoute_cong_2_clicked();
+    void on_pb_modif_clicked();
 
-    void on_pb_ajouter_8_clicked();
+    void on_pushButton_recherche_nom_clicked();
 
-    void on_pb_ajouter_9_clicked();
+    void on_pushButton_clicked();
 
-    void on_ajoute_cong_3_clicked();
+    void on_tri_cin_clicked();
 
-    void on_pb_ajouter_10_clicked();
+    void on_lineEdit_nom_textEdited(const QString &arg1);
 
-    void on_pb_ajouter_11_clicked();
+    void on_pb_modif_abonnemnt_clicked();
 
-    void on_radioButton_23_clicked();
+    void on_tri_nom_clicked();
 
-    void on_radioButton_23_toggled(bool checked);
-
-    void on_radioButton_24_toggled(bool checked);
-
-    void on_radioButton_27_toggled(bool checked);
-
-    void on_groupBox_5_toggled(bool arg1);
-
-    void on_radioButton_28_toggled(bool checked);
-
-    void on_radioButton_25_toggled(bool checked);
+//email
 
     void sendMail();
     void mailSent(QString);
 
+
+    void on_comboBox_currentTextChanged(const QString &arg1);
+
+    void on_radioButton_toggled(bool checked);
+
+    void on_radioButton_2_toggled(bool checked);
+
+    void on_statistique_clicked();
+
 private:
     Ui::MainWindow *ui;
-    Employe tmpemploye;
 
-    Conge  tmpconge;
+    Abonne tmpabonne;
+    Abonnement tmpabonnement;
+    QString sexe;
+
 
 };
 #endif // MAINWINDOW_H
