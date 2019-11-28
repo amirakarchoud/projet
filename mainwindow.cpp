@@ -1,53 +1,15 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "abonne.h"
-#include "abonnement.h"
-#include "smtp.h"
+#include "reclamation.h"
+//#include "fiche.h"
 #include <QMessageBox>
-#include <QIntValidator>
-#include <QRegExpValidator>
-#include <QString>
-#include <QRegExp>
-#include "statistique.h"
-//#define NOM_RX "^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
-#define CARACTERE_EX "^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$"
-#define EMAIL_RX "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
-
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
 ui->setupUi(this);
-ui->tababonne->setModel(tmpabonne.afficher());
-ui->tababonnement->setModel(tmpabonnement.afficher());
-
-this->setWindowTitle("gestion des clients");//modifier le nom de l'application
-//resize(870, 550);//modifier la taille de l'app
-//pour valider cin
-QIntValidator *cin =new QIntValidator(1,10000000);
-ui->lineedit_cin->setValidator(cin);
-ui->lineedit_cin_2->setValidator(cin);
-
-
-//pour valider les nom
-//QRegExp rxline_edit;
-//QRegExpValidator *line_edit=new QRegExpValidator(rxline_edit,this);
-//ui->lineEdit_nom->setValidator(line_edit);
-
-//pour valider un email
-//QRegExp rx_email(EMAIL_RX);
-//QRegExpValidator *email =new QRegExpValidator(rx_email,this);
-//ui->lineEdit_email->setValidator(email);
-
-
-//email
-
-connect(ui->sendBtn, SIGNAL(clicked()),this, SLOT(sendMail()));
-connect(ui->exitBtn, SIGNAL(clicked()),this, SLOT(close()));
-
-
-
-
+ui->tableView_3->setModel(tmpreclamation.afficher());
+//ui->tableView_2->setModel(tmpfiche.afficher());
 
 }
 
@@ -58,198 +20,96 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pb_ajouter_clicked()
 {
-    int cin = ui->lineedit_cin->text().toInt();
-    QString nom= ui->lineEdit_nom->text();
-    QString prenom= ui->lineEdit_prenom->text();
-    int numero = ui->lineEdit_numero->text().toInt();
-    QString adresse= ui->lineEdit_adresse->text();
-    QString sexe1=sexe;
-    QString email= ui->lineEdit_email->text();
-
-
-
-
-  Abonne a(cin,nom,prenom,numero,adresse,sexe1,email);
-  bool test=a.ajouter();
+    int num = ui->lineEdit->text().toInt();
+    QString objet= ui->lineEdit_2->text();
+    QString description = ui->lineEdit_3->text();
+    QString lieu = ui->lineEdit_4->text();
+    QString date = ui->lineEdit_5->text();
+  reclamation e(num,objet,description,lieu,date);
+  bool test=e.ajouter();
   if(test)
-{ui->tababonne->setModel(tmpabonne.afficher());//refresh
-QMessageBox::information(nullptr, QObject::tr("Ajouter un Client"),
-                  QObject::tr("Client ajouté.\n"
+{ui->tableView_3->setModel(tmpreclamation.afficher());//refresh
+QMessageBox::information(nullptr, QObject::tr("Ajouter "),
+                  QObject::tr("ajouté.\n"
                               "Click Cancel to exit."), QMessageBox::Cancel);
 
 }
   else
-      QMessageBox::critical(nullptr, QObject::tr("Ajouter un Client"),
+      QMessageBox::critical(nullptr, QObject::tr("Ajouter "),
                   QObject::tr("Erreur !.\n"
                               "Click Cancel to exit."), QMessageBox::Cancel);
 
 
 }
-
 
 void MainWindow::on_pb_supprimer_clicked()
 {
-    int cinn = ui->lineEdit_cin_2->text().toInt();
-    bool test=tmpabonne.supprimer(cinn);
-    if(test)
-    {ui->tababonne->setModel(tmpabonne.afficher());//refresh
-     ui->tababonnement->setModel(tmpabonnement.afficher());//refresh
+    int num = ui->lineEdit->text().toInt();
+    QString objet= ui->lineEdit_2->text();
+    QString description = ui->lineEdit_3->text();
+    QString lieu = ui->lineEdit_4->text();
+    QString date = ui->lineEdit_5->text();
 
-        QMessageBox::information(nullptr, QObject::tr("Supprimer un client"),
-                    QObject::tr("clients supprimé.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
+  reclamation e(num,objet,description,lieu,date);
+  bool test=e.supprimer(num);
 
-    }
-    else
-        QMessageBox::critical(nullptr, QObject::tr("Supprimer un client"),
-                    QObject::tr("Erreur !.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
+if(test)
+{ui->tableView_3->setModel(tmpreclamation.afficher());//refresh
+    QMessageBox::information(nullptr, QObject::tr("Supprimer "),
+                QObject::tr("Supprimé.\n"
+                            "Click Cancel to exit."), QMessageBox::Cancel);
+
+}
+else
+    QMessageBox::critical(nullptr, QObject::tr("Supprimer "),
+                QObject::tr("Erreur !.\n"
+                            "Click Cancel to exit."), QMessageBox::Cancel);//
+
+
 }
 
-void MainWindow::on_pb_ajouter_2_clicked()
+/*void MainWindow::on_pb_ajouterf_clicked()
 {
-
-    int cin = ui->lineedit_cin_2->text().toInt();
-    QString date= ui->lineEdit_nom_2->text();
-    int id = ui->lineEdit_id->text().toInt();
-
-
-    Abonnement aa(cin,id,date);
-  bool test=aa.ajouter();
+    int ref = ui->lineEdit_6->text().toInt();
+    QString etat= ui->lineEdit_7->text();
+    QString date = ui->lineEdit_8->text();
+  fiche e(ref,etat,date);
+  bool test=e.ajouter();
   if(test)
-{ui->tababonnement->setModel(tmpabonnement.afficher());//refresh
-QMessageBox::information(nullptr, QObject::tr("Ajouter un Abonnement"),
-                  QObject::tr("Abonnement ajouté.\n"
+{ui->tableView_2->setModel(tmpfiche.afficher());//refresh
+QMessageBox::information(nullptr, QObject::tr("Ajouter "),
+                  QObject::tr("ajouté.\n"
                               "Click Cancel to exit."), QMessageBox::Cancel);
 
 }
   else
-      QMessageBox::critical(nullptr, QObject::tr("Ajouter un Abonnement"),
+      QMessageBox::critical(nullptr, QObject::tr("Ajouter "),
                   QObject::tr("Erreur !.\n"
                               "Click Cancel to exit."), QMessageBox::Cancel);
 
+
 }
 
-void MainWindow::on_pb_supprimer_2_clicked()
+void MainWindow::on_pb_supprimer2_clicked()
 {
-    int cin = ui->lineedit_cin_3->text().toInt();
-    bool test=tmpabonnement.supprimer(cin);
-    if(test)
-    {ui->tababonnement->setModel(tmpabonnement.afficher());//refresh
-        QMessageBox::information(nullptr, QObject::tr("Supprimer un Abonnement"),
-                    QObject::tr("Abonnement supprimé.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
+    //int ref = ui->lineEdit_17->text().toInt();
 
-    }
-    else
-        QMessageBox::critical(nullptr, QObject::tr("Supprimer un Abonnement"),
-                    QObject::tr("Erreur !.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
-}
+  //fiche e(ref,etat,date);
+  bool test=tmpfiche.supprimer();
 
-
-
-
-
-void MainWindow::on_pb_modif_clicked()
-{
-    int cin = ui->cin_modif->text().toInt();
-    int numero = ui->numero_modif->text().toInt();
-    QString adresse = ui->adresse_modif->text();
-    QString email = ui->email_modif->text();
-    Abonne a;
-    if(a.recherche_cin(cin)){
-        bool test = a.modifier(cin,numero,adresse,email);
-        if(test){
-            ui->tababonne->setModel(tmpabonne.afficher());
-            QMessageBox::information(nullptr,QObject::tr("client modifier"),QObject::tr("click cancel to exit!"),QMessageBox::Cancel);
-        }
-    }
+if(test)
+{ui->tableView_2->setModel(tmpfiche.afficher());//refresh
+    QMessageBox::information(nullptr, QObject::tr("Supprimer "),
+                QObject::tr("Supprimé.\n"
+                            "Click Cancel to exit."), QMessageBox::Cancel);
 
 }
-
-//rechercher nom ( verifier)
-void MainWindow::on_pushButton_recherche_nom_clicked()
-{
-    QString nom = ui->recherche_nom->text();
-    ui->tabrecherche->setModel(tmpabonne.cherch_nom(nom));
-}
-
-void MainWindow::on_tri_cin_clicked()
-{
-    ui->tababonne->setModel(tmpabonne.afficher_tri_cin());
-
-}
-
-void MainWindow::on_lineEdit_nom_textEdited(const QString &arg1)
-{
-    QString text=arg1;
-    /*QString caractere_ex(CARACTERE_EX);
-    for (int i=0;i<text.size();i++)
-    {
-        foreach(const QChar &y,caractere_ex)
-            if(text.at(i)==y)
-                text[i]=' ';
-        ui->lineEdit_nom->setText(text);
-    }*/
-}
-
-void MainWindow::on_pb_modif_abonnemnt_clicked()
-{
-    int cin = ui->modif_abonnement_cin->text().toInt();
-    int id = ui->modif_abonnemnt_id->text().toInt();
-    QString date = ui->modif_abonnemnt_date->text();
-
-    Abonnement aa;
-    if(aa.recherche_cin(cin)){
-        bool test1 = aa.modifier(cin,date,id);
-        if(test1){
-            ui->tababonnement->setModel(tmpabonnement.afficher());
-            QMessageBox::information(nullptr,QObject::tr("abonnement modifier"),QObject::tr("click cancel to exit!"),QMessageBox::Cancel);
-        }
-    }
-}
-
-void MainWindow::on_tri_nom_clicked()
-{
-    ui->tababonne->setModel(tmpabonne.afficher_tri_nom());
-
-}
-
-//email
-
-void MainWindow::sendMail()
-{
-    Smtp* smtp = new Smtp(ui->uname->text(), ui->paswd->text(), ui->server->text(), ui->port->text().toUShort());
-    connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
+else
+    QMessageBox::critical(nullptr, QObject::tr("Supprimer "),
+                QObject::tr("Erreur !.\n"
+                            "Click Cancel to exit."), QMessageBox::Cancel);//
 
 
-    smtp->sendMail(ui->uname->text(), ui->rcpt->text() , ui->subject->text(),ui->msg->toPlainText());
-}
+}*/
 
 
-void MainWindow::mailSent(QString status)
-{
-    if(status == "Message sent")
-        QMessageBox::warning( nullptr, tr( "Qt Simple SMTP client" ), tr( "Message sent!\n\n" ) );
-}
-
-
-
-
-
-void MainWindow::on_radioButton_toggled(bool checked)
-{
-    if(checked)sexe="female";
-}
-
-void MainWindow::on_radioButton_2_toggled(bool checked)
-{
-    if(checked)sexe="male";
-}
-
-void MainWindow::on_statistique_clicked()
-{
-    statistique *a=new statistique();
-    a->show();
-}
