@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/sound">
+        <file>Correct AnswerIdea  Sound Effects.mp3</file>
+        <file>foghi.mp3</file>
+    </qresource>
+</RCC>

@@ -4,9 +4,12 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui sql \
+               multimedia
+greaterThan(QT_MAJOR_VERSION, 4):
+ QT += widgets
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
 
 TARGET = Atelier_Crud_Vf
 TEMPLATE = app
@@ -25,17 +28,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-    fiche.cpp \
         main.cpp \
+    ligne.cpp \
         mainwindow.cpp \
     connexion.cpp \
-    reclamation.cpp
+    station.cpp
 
 HEADERS += \
-    fiche.h \
+    ligne.h \
         mainwindow.h \
     connexion.h \
-    reclamation.h
+    station.h
 
 FORMS += \
         mainwindow.ui
@@ -44,3 +47,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    qrc.qrc
