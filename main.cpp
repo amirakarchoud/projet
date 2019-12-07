@@ -3,13 +3,14 @@
 #include <QMessageBox>
 #include "connexion.h"
 #include <QtDebug>
+#include "login1.h"
 int main(int argc, char *argv[])
 {  QApplication a(argc, argv);
 
     Connexion c;
 
   bool test=c.ouvrirConnexion();
-  MainWindow w;
+  login1 w;
   if(test)
   {w.show();
 
@@ -24,3 +25,5 @@ int main(int argc, char *argv[])
                               "Click Cancel to exit."), QMessageBox::Cancel);
 
     return a.exec();}
+
+

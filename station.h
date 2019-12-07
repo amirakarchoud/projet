@@ -22,6 +22,9 @@ class station
     bool ControleNumeroString(QString);
     bool controleNumber(int );
     bool recherche(int );
+    void soundcorrect();
+    void sounderreur();
+
 
 
 

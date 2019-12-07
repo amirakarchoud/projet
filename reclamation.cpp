@@ -60,14 +60,38 @@ query.prepare("Delete from reclamation where NUM = :num ");
 query.bindValue(":num", res);
 return    query.exec();
 }
-/*bool reclamation::Modifier(int numm)
+
+bool reclamation::Modifier(int num,QString objet,QString description, QString lieu, QString datee){
+    QSqlQuery query;
+    QString res= QString::number(num);
+
+
+    query.prepare("update RECLAMATION set ,OBJET=:objet ,DESCRIPTION=:description,LIEU=:lieu,DATEE=:DATE  where NUM=:num;");
+    query.bindValue(":objet", objet);
+    query.bindValue(":num", res);
+    query.bindValue(":description", description);
+    query.bindValue(":datee", datee);
+    query.bindValue(":lieu", lieu);
+    return query.exec();
+}
+
+bool reclamation::rech(int numm)
 {
     QSqlQuery query;
-    query.prepare("update system.reclamation set etat = ? where numR = ?");
-    query.addBindValue(numm);
-    query.addBindValue(numR);
-
+    query.prepare("select * from RECLAMATION where NUM = :num;");
+    query.bindValue(":num", numm);
     return query.exec();
-}*/
+}
+QSqlQueryModel * reclamation::trier()
+{
+    QSqlQueryModel * model= new QSqlQueryModel();
+
+    model->setQuery("select * from RECLAMATION ORDER BY NUM");
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("objet"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("description "));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("lieu"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("date"));
+        return model;
+}
 
 

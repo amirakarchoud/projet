@@ -16,11 +16,13 @@ class reclamation
     bool ajouter();
     QSqlQueryModel * afficher();
     bool supprimer(int);
-    bool Modifier(int);
+    bool Modifier(int,QString,QString ,QString,QString);
+    bool rech(int);
+    QSqlQueryModel * trier();
 private:
     QString objet;
-       QString description;
-          QString lieu;
+    QString description;
+    QString lieu;
     int num;
     QString datee;
 

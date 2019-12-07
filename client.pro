@@ -17,24 +17,64 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     abonne.cpp \
     abonnement.cpp \
+    adhir.cpp \
+    amira.cpp \
+    annonce.cpp \
+    conge.cpp \
     connexion.cpp \
+    employe.cpp \
+    fiche.cpp \
+    ligne.cpp \
+    login1.cpp \
     main.cpp \
     mainwindow.cpp \
+    malek.cpp \
+    med.cpp \
+    nadhir.cpp \
+    panne.cpp \
     qcustomplot.cpp \
+    reclamation.cpp \
+    rouaa.cpp \
     smtp.cpp \
-    statistique.cpp
+    station.cpp \
+    statistique.cpp \
+    ticket.cpp \
+    vehicule.cpp
 
 HEADERS += \
     abonne.h \
     abonnement.h \
+    adhir.h \
+    amira.h \
+    annonce.h \
+    conge.h \
     connexion.h \
+    employe.h \
+    fiche.h \
+    ligne.h \
+    login1.h \
     mainwindow.h \
+    malek.h \
+    med.h \
+    nadhir.h \
+    panne.h \
     qcustomplot.h \
+    reclamation.h \
+    rouaa.h \
     smtp.h \
-    statistique.h
+    station.h \
+    statistique.h \
+    ticket.h \
+    vehicule.h
 
 FORMS += \
-    mainwindow.ui \
+    adhir.ui \
+    amira.ui \
+    login1.ui \
+    malek.ui \
+    med.ui \
+    nadhir.ui \
+    rouaa.ui \
     statistique.ui
 
 # Default rules for deployment.
