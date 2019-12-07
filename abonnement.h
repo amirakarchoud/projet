@@ -18,7 +18,7 @@ class Abonnement
     bool supprimer(int);
     bool recherche_cin(int);
     bool modifier(int,QString,int);
-
+    QSqlQueryModel * modelref();
 private:
     QString date;
     int cin,id;

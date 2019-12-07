@@ -1,4 +1,4 @@
-/*#ifndef FICHE_H
+#ifndef FICHE_H
 #define FICHE_H
 #include <QString>
 #include <QSqlQuery>
@@ -13,8 +13,10 @@ class fiche
     QString get_date();
     bool ajouter();
     QSqlQueryModel * afficher();
-    bool supprimer();
-    bool Modifier(int);
+    bool supprimer(int);
+    bool Modifier(int,QString,QString);
+    bool rech(int);
+    QSqlQueryModel * trier(int);
 private:
     int ref;
     QString etat;
@@ -22,4 +24,3 @@ private:
 
 };
 #endif // FICHE_H
-*/

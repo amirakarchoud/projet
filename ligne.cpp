@@ -90,7 +90,7 @@ model->setHeaderData(3, Qt::Horizontal, QObject::tr("distance"));
     QSqlQuery query;
     QString res= QString::number(refligne);
     QString res2= QString::number(numstation);
-    query.prepare("UPDATE station set refligne=:ligne where numstation=:numstation");
+    query.prepare("UPDATE station set refligne1=:ligne where numstation=:numstation");
     query.bindValue(":ligne", res);
     query.bindValue(":numstation", res2);
     return query.exec();
@@ -181,12 +181,12 @@ bool Ligne::recherche(int x)
 void Ligne::sounderreur()
 {
    QMediaPlayer * music = new QMediaPlayer();
-   music->setMedia(QUrl("qrc:/foghi.mp3"));
+   music->setMedia(QUrl("qrc:sound/foghi.mp3"));
    music->play();
 }
 void Ligne::soundcorrect()
 {
    QMediaPlayer * music = new QMediaPlayer();
-   music->setMedia(QUrl("qrc:/Correct Answerldea Sound Effects.mp3"));
+   music->setMedia(QUrl("qrc:sound/correct.mp3"));
    music->play();
 }

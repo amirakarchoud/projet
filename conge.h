@@ -6,11 +6,10 @@
 class Conge
 {public:
     Conge();
-    Conge(QString,QString,QString,int);
-    QString get_nom();
-    QString get_prenom();
+    Conge(QString,int,int);
     QString get_type();
     int get_id_conge();
+    int get_cin();
 
 
     bool ajouter();
@@ -21,8 +20,8 @@ class Conge
      QSqlQueryModel * trier(bool ph,bool croissant);
 
 private:
-    QString nom,prenom,type;
-    int id_conge;
+    QString type;
+    int id_conge,cin;
 
 };
 

@@ -87,3 +87,11 @@ bool Abonnement::modifier(int cin, QString date ,int id)
     return query.exec();
 }
 
+QSqlQueryModel * Abonnement::modelref(){
+    QSqlQuery *query = new QSqlQuery;
+    QSqlQueryModel *model =new QSqlQueryModel();
+    query->prepare("select cin from abonne");
+    query->exec();
+    model->setQuery(*query);
+    return model;
+}

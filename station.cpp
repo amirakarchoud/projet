@@ -1,6 +1,7 @@
 #include "station.h"
 #include <QDebug>
 #include <QMessageBox>
+#include <QMediaPlayer>
 
 station::station()
 {
@@ -118,4 +119,16 @@ bool station::recherche(int x)
     query.bindValue(":numstation", res);
     query.exec();
     return query.first();
+}
+void station::sounderreur()
+{
+   QMediaPlayer * music = new QMediaPlayer();
+   music->setMedia(QUrl("qrc:sound/foghi.mp3"));
+   music->play();
+}
+void station::soundcorrect()
+{
+   QMediaPlayer * music = new QMediaPlayer();
+   music->setMedia(QUrl("qrc:sound/correct.mp3"));
+   music->play();
 }
