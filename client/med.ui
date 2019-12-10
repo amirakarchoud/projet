@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>984</width>
-    <height>533</height>
+    <width>1711</width>
+    <height>971</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,10 @@
   <widget class="QTabWidget" name="tabWidget_2">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>190</x>
      <y>0</y>
-     <width>981</width>
-     <height>531</height>
+     <width>1711</width>
+     <height>971</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -68,10 +68,10 @@ QTabBar::tab:selected {
     <widget class="QTabWidget" name="tabWidget">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>0</x>
        <y>70</y>
-       <width>751</width>
-       <height>401</height>
+       <width>1521</width>
+       <height>731</height>
       </rect>
      </property>
      <property name="currentIndex">
@@ -84,11 +84,14 @@ QTabBar::tab:selected {
       <widget class="QLabel" name="label">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>10</y>
-         <width>81</width>
-         <height>51</height>
+         <x>80</x>
+         <y>40</y>
+         <width>141</width>
+         <height>91</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>CIN</string>
@@ -97,11 +100,14 @@ QTabBar::tab:selected {
       <widget class="QLabel" name="label_2">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>80</y>
-         <width>71</width>
-         <height>41</height>
+         <x>80</x>
+         <y>180</y>
+         <width>131</width>
+         <height>71</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>Nom</string>
@@ -110,11 +116,14 @@ QTabBar::tab:selected {
       <widget class="QLabel" name="label_3">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>140</y>
-         <width>81</width>
-         <height>41</height>
+         <x>60</x>
+         <y>330</y>
+         <width>181</width>
+         <height>81</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>Prénom</string>
@@ -123,14 +132,15 @@ QTabBar::tab:selected {
       <widget class="QLineEdit" name="lineedit_cin">
        <property name="geometry">
         <rect>
-         <x>130</x>
-         <y>30</y>
-         <width>113</width>
-         <height>20</height>
+         <x>260</x>
+         <y>60</y>
+         <width>191</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -142,14 +152,15 @@ QTabBar::tab:selected {
       <widget class="QLineEdit" name="lineEdit_nom">
        <property name="geometry">
         <rect>
-         <x>130</x>
-         <y>90</y>
-         <width>113</width>
-         <height>20</height>
+         <x>260</x>
+         <y>190</y>
+         <width>191</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -161,14 +172,15 @@ QTabBar::tab:selected {
       <widget class="QLineEdit" name="lineEdit_prenom">
        <property name="geometry">
         <rect>
-         <x>130</x>
-         <y>150</y>
-         <width>113</width>
-         <height>20</height>
+         <x>260</x>
+         <y>350</y>
+         <width>201</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -177,55 +189,34 @@ QTabBar::tab:selected {
 }</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pb_ajouter">
-       <property name="geometry">
-        <rect>
-         <x>500</x>
-         <y>310</y>
-         <width>186</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton#pb_ajouter {
-    background-color: white;
-    border-style: outset;
-    border-width: 2px;
-    border-radius: 10px;
-    border-color: beige;
-    font: bold 14px;
-    min-width: 10em;
-    padding: 6px;
-}</string>
-       </property>
-       <property name="text">
-        <string>Ajouter</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_5">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>20</y>
-         <width>81</width>
-         <height>41</height>
+         <x>760</x>
+         <y>40</y>
+         <width>191</width>
+         <height>91</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
        <property name="text">
-        <string>numero </string>
+        <string>Numero </string>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_numero">
        <property name="geometry">
         <rect>
-         <x>450</x>
-         <y>30</y>
-         <width>113</width>
-         <height>20</height>
+         <x>970</x>
+         <y>70</y>
+         <width>201</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -237,27 +228,31 @@ QTabBar::tab:selected {
       <widget class="QLabel" name="label_6">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>80</y>
-         <width>111</width>
-         <height>41</height>
+         <x>760</x>
+         <y>160</y>
+         <width>191</width>
+         <height>101</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
        <property name="text">
-        <string>adresse</string>
+        <string>Adresse</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_adresse">
        <property name="geometry">
         <rect>
-         <x>450</x>
-         <y>90</y>
-         <width>113</width>
-         <height>20</height>
+         <x>972</x>
+         <y>190</y>
+         <width>201</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -269,24 +264,30 @@ QTabBar::tab:selected {
       <widget class="QLabel" name="label_7">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>130</y>
-         <width>101</width>
-         <height>51</height>
+         <x>580</x>
+         <y>330</y>
+         <width>171</width>
+         <height>81</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
        <property name="text">
-        <string>sexe</string>
+        <string>Sexe</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_8">
        <property name="geometry">
         <rect>
-         <x>200</x>
-         <y>190</y>
-         <width>91</width>
-         <height>51</height>
+         <x>350</x>
+         <y>480</y>
+         <width>141</width>
+         <height>81</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>E-mail</string>
@@ -295,14 +296,15 @@ QTabBar::tab:selected {
       <widget class="QLineEdit" name="lineEdit_email">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>210</y>
-         <width>113</width>
-         <height>20</height>
+         <x>550</x>
+         <y>500</y>
+         <width>211</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -316,8 +318,8 @@ QTabBar::tab:selected {
         <rect>
          <x>9</x>
          <y>10</y>
-         <width>721</width>
-         <height>381</height>
+         <width>1391</width>
+         <height>651</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -343,47 +345,79 @@ QGroupBox::title {
        <widget class="QRadioButton" name="radioButton_2">
         <property name="geometry">
          <rect>
-          <x>500</x>
-          <y>140</y>
-          <width>63</width>
-          <height>16</height>
+          <x>1040</x>
+          <y>330</y>
+          <width>141</width>
+          <height>51</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
         <property name="text">
          <string>male</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_ajouter">
+        <property name="geometry">
+         <rect>
+          <x>1005</x>
+          <y>530</y>
+          <width>281</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#pb_ajouter {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Ajouter</string>
         </property>
        </widget>
       </widget>
       <widget class="QRadioButton" name="radioButton">
        <property name="geometry">
         <rect>
-         <x>400</x>
-         <y>150</y>
-         <width>63</width>
-         <height>16</height>
+         <x>800</x>
+         <y>330</y>
+         <width>171</width>
+         <height>81</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>female</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_30">
+      <widget class="QLabel" name="label_29">
        <property name="geometry">
         <rect>
          <x>-6</x>
          <y>0</y>
-         <width>761</width>
-         <height>391</height>
+         <width>1531</width>
+         <height>721</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
-      <zorder>label_30</zorder>
+      <zorder>label_29</zorder>
       <zorder>groupBox_3</zorder>
       <zorder>label</zorder>
       <zorder>label_2</zorder>
@@ -391,7 +425,6 @@ QGroupBox::title {
       <zorder>lineedit_cin</zorder>
       <zorder>lineEdit_nom</zorder>
       <zorder>lineEdit_prenom</zorder>
-      <zorder>pb_ajouter</zorder>
       <zorder>label_5</zorder>
       <zorder>lineEdit_numero</zorder>
       <zorder>label_6</zorder>
@@ -408,30 +441,31 @@ QGroupBox::title {
       <widget class="QTableView" name="tababonne">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>70</y>
-         <width>751</width>
-         <height>301</height>
+         <x>280</x>
+         <y>150</y>
+         <width>911</width>
+         <height>531</height>
         </rect>
        </property>
       </widget>
       <widget class="QPushButton" name="tri_cin">
        <property name="geometry">
         <rect>
-         <x>50</x>
-         <y>20</y>
-         <width>186</width>
-         <height>31</height>
+         <x>70</x>
+         <y>40</y>
+         <width>321</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton#tri_cin {
-    background-color: white;
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+    background-color: red;
     border-style: outset;
     border-width: 2px;
     border-radius: 10px;
     border-color: beige;
-    font: bold 14px;
+    font: bold 20px;
     min-width: 10em;
     padding: 6px;
 }</string>
@@ -443,20 +477,21 @@ QGroupBox::title {
       <widget class="QPushButton" name="tri_nom">
        <property name="geometry">
         <rect>
-         <x>510</x>
-         <y>20</y>
-         <width>186</width>
-         <height>31</height>
+         <x>1030</x>
+         <y>40</y>
+         <width>301</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton#tri_nom {
-    background-color: white;
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+    background-color: red;
     border-style: outset;
     border-width: 2px;
     border-radius: 10px;
     border-color: beige;
-    font: bold 14px;
+    font: bold 20px;
     min-width: 10em;
     padding: 6px;
 }</string>
@@ -468,20 +503,21 @@ QGroupBox::title {
       <widget class="QPushButton" name="statistique">
        <property name="geometry">
         <rect>
-         <x>280</x>
-         <y>20</y>
-         <width>186</width>
-         <height>31</height>
+         <x>590</x>
+         <y>40</y>
+         <width>351</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton#statistique {
-    background-color: white;
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+    background-color: red;
     border-style: outset;
     border-width: 2px;
     border-radius: 10px;
     border-color: beige;
-    font: bold 14px;
+    font: bold 20px;
     min-width: 10em;
     padding: 6px;
 }</string>
@@ -490,23 +526,23 @@ QGroupBox::title {
         <string>statistique</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_31">
+      <widget class="QLabel" name="label_30">
        <property name="geometry">
         <rect>
-         <x>0</x>
+         <x>-6</x>
          <y>-1</y>
-         <width>751</width>
-         <height>391</height>
+         <width>1531</width>
+         <height>721</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
-      <zorder>label_31</zorder>
+      <zorder>label_30</zorder>
       <zorder>tababonne</zorder>
       <zorder>tri_cin</zorder>
       <zorder>tri_nom</zorder>
@@ -519,14 +555,15 @@ QGroupBox::title {
       <widget class="QLineEdit" name="lineEdit_cin_2">
        <property name="geometry">
         <rect>
-         <x>170</x>
-         <y>50</y>
-         <width>113</width>
-         <height>20</height>
+         <x>690</x>
+         <y>130</y>
+         <width>251</width>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -538,11 +575,14 @@ QGroupBox::title {
       <widget class="QLabel" name="label_4">
        <property name="geometry">
         <rect>
-         <x>50</x>
-         <y>30</y>
-         <width>91</width>
-         <height>51</height>
+         <x>400</x>
+         <y>110</y>
+         <width>161</width>
+         <height>101</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>CIN</string>
@@ -551,20 +591,21 @@ QGroupBox::title {
       <widget class="QPushButton" name="pb_supprimer">
        <property name="geometry">
         <rect>
-         <x>240</x>
-         <y>140</y>
-         <width>186</width>
-         <height>31</height>
+         <x>930</x>
+         <y>460</y>
+         <width>256</width>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton#pb_supprimer {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     background-color: red;
     border-style: outset;
     border-width: 2px;
     border-radius: 10px;
     border-color: beige;
-    font: bold 14px;
+    font: bold 20px;
     min-width: 10em;
     padding: 6px;
 }</string>
@@ -578,8 +619,8 @@ QGroupBox::title {
         <rect>
          <x>9</x>
          <y>9</y>
-         <width>721</width>
-         <height>351</height>
+         <width>1481</width>
+         <height>681</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -603,23 +644,23 @@ QGroupBox::title {
         <string>supprimer un client</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_32">
+      <widget class="QLabel" name="label_31">
        <property name="geometry">
         <rect>
-         <x>-6</x>
+         <x>0</x>
          <y>0</y>
-         <width>761</width>
-         <height>391</height>
+         <width>2211</width>
+         <height>721</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
-      <zorder>label_32</zorder>
+      <zorder>label_31</zorder>
       <zorder>groupBox_4</zorder>
       <zorder>lineEdit_cin_2</zorder>
       <zorder>label_4</zorder>
@@ -632,10 +673,10 @@ QGroupBox::title {
       <widget class="QGroupBox" name="groupBox">
        <property name="geometry">
         <rect>
-         <x>9</x>
+         <x>50</x>
          <y>9</y>
-         <width>721</width>
-         <height>351</height>
+         <width>1441</width>
+         <height>691</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -662,14 +703,16 @@ QGroupBox::title {
       <widget class="QLineEdit" name="email_modif">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>160</y>
-         <width>113</width>
-         <height>20</height>
+         <x>990</x>
+         <y>270</y>
+         <width>221</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -681,14 +724,15 @@ QGroupBox::title {
       <widget class="QLineEdit" name="adresse_modif">
        <property name="geometry">
         <rect>
-         <x>140</x>
-         <y>100</y>
-         <width>113</width>
-         <height>20</height>
+         <x>290</x>
+         <y>270</y>
+         <width>241</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -700,14 +744,15 @@ QGroupBox::title {
       <widget class="QLineEdit" name="numero_modif">
        <property name="geometry">
         <rect>
-         <x>460</x>
-         <y>40</y>
-         <width>113</width>
-         <height>20</height>
+         <x>980</x>
+         <y>80</y>
+         <width>221</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -719,24 +764,30 @@ QGroupBox::title {
       <widget class="QLabel" name="label_12">
        <property name="geometry">
         <rect>
-         <x>340</x>
-         <y>30</y>
-         <width>91</width>
-         <height>41</height>
+         <x>730</x>
+         <y>60</y>
+         <width>181</width>
+         <height>81</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
        <property name="text">
-        <string>numero </string>
+        <string>Numero </string>
        </property>
       </widget>
       <widget class="QLabel" name="label_13">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>30</y>
-         <width>61</width>
-         <height>31</height>
+         <x>90</x>
+         <y>80</y>
+         <width>141</width>
+         <height>61</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>CIN</string>
@@ -745,14 +796,15 @@ QGroupBox::title {
       <widget class="QLineEdit" name="cin_modif">
        <property name="geometry">
         <rect>
-         <x>140</x>
-         <y>40</y>
-         <width>113</width>
-         <height>20</height>
+         <x>290</x>
+         <y>90</y>
+         <width>241</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -764,11 +816,14 @@ QGroupBox::title {
       <widget class="QLabel" name="label_15">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>150</y>
-         <width>61</width>
-         <height>41</height>
+         <x>730</x>
+         <y>250</y>
+         <width>161</width>
+         <height>81</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>E-mail</string>
@@ -777,20 +832,21 @@ QGroupBox::title {
       <widget class="QPushButton" name="pb_modif">
        <property name="geometry">
         <rect>
-         <x>470</x>
-         <y>282</y>
-         <width>186</width>
-         <height>31</height>
+         <x>930</x>
+         <y>520</y>
+         <width>291</width>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton#pb_modif {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     background-color: white;
     border-style: outset;
     border-width: 2px;
     border-radius: 10px;
     border-color: beige;
-    font: bold 14px;
+    font: bold 20px;
     min-width: 10em;
     padding: 6px;
 }</string>
@@ -802,33 +858,36 @@ QGroupBox::title {
       <widget class="QLabel" name="label_18">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>90</y>
-         <width>61</width>
-         <height>41</height>
+         <x>100</x>
+         <y>250</y>
+         <width>171</width>
+         <height>81</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
        <property name="text">
-        <string>adresse</string>
+        <string>Adresse</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_33">
+      <widget class="QLabel" name="label_32">
        <property name="geometry">
         <rect>
-         <x>-6</x>
-         <y>-1</y>
-         <width>761</width>
-         <height>391</height>
+         <x>0</x>
+         <y>0</y>
+         <width>2211</width>
+         <height>721</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
-      <zorder>label_33</zorder>
+      <zorder>label_32</zorder>
       <zorder>groupBox</zorder>
       <zorder>email_modif</zorder>
       <zorder>adresse_modif</zorder>
@@ -847,11 +906,14 @@ QGroupBox::title {
       <widget class="QLabel" name="label_11">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>40</y>
-         <width>91</width>
-         <height>41</height>
+         <x>140</x>
+         <y>30</y>
+         <width>161</width>
+         <height>71</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>Nom</string>
@@ -860,10 +922,10 @@ QGroupBox::title {
       <widget class="QLineEdit" name="recherche_nom">
        <property name="geometry">
         <rect>
-         <x>160</x>
+         <x>340</x>
          <y>50</y>
-         <width>113</width>
-         <height>20</height>
+         <width>301</width>
+         <height>41</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -881,25 +943,9 @@ QGroupBox::title {
         <rect>
          <x>30</x>
          <y>111</y>
-         <width>691</width>
-         <height>241</height>
+         <width>1351</width>
+         <height>581</height>
         </rect>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_recherche_nom">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>40</y>
-         <width>186</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>rechercher par nom</string>
        </property>
       </widget>
       <widget class="QGroupBox" name="groupBox_8">
@@ -907,8 +953,8 @@ QGroupBox::title {
         <rect>
          <x>20</x>
          <y>20</y>
-         <width>701</width>
-         <height>341</height>
+         <width>1371</width>
+         <height>691</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -932,27 +978,43 @@ QGroupBox::title {
         <string>rechercher</string>
        </property>
       </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>2211</width>
+         <height>721</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_33</zorder>
       <zorder>groupBox_8</zorder>
       <zorder>recherche_nom</zorder>
       <zorder>label_11</zorder>
       <zorder>tabrecherche</zorder>
-      <zorder>pushButton_recherche_nom</zorder>
      </widget>
     </widget>
     <widget class="QLabel" name="label_19">
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>981</width>
-       <height>511</height>
+       <x>-6</x>
+       <y>-1</y>
+       <width>1531</width>
+       <height>961</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../Downloads/76765592_3409434282430241_7790646126016724992_n.jpg</pixmap>
+      <pixmap>../../Downloads/back.png</pixmap>
      </property>
     </widget>
     <zorder>label_19</zorder>
@@ -965,14 +1027,14 @@ QGroupBox::title {
     <widget class="QTabWidget" name="tabWidget_3">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>60</y>
-       <width>731</width>
-       <height>431</height>
+       <x>0</x>
+       <y>70</y>
+       <width>1521</width>
+       <height>681</height>
       </rect>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab_7">
       <attribute name="title">
@@ -981,11 +1043,14 @@ QGroupBox::title {
       <widget class="QLabel" name="label_9">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>40</y>
-         <width>71</width>
-         <height>41</height>
+         <x>120</x>
+         <y>110</y>
+         <width>111</width>
+         <height>61</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>CIN</string>
@@ -994,42 +1059,26 @@ QGroupBox::title {
       <widget class="QLabel" name="label_10">
        <property name="geometry">
         <rect>
-         <x>320</x>
-         <y>40</y>
-         <width>81</width>
-         <height>31</height>
+         <x>650</x>
+         <y>110</y>
+         <width>141</width>
+         <height>61</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>Date</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_nom_2">
-       <property name="geometry">
-        <rect>
-         <x>410</x>
-         <y>50</y>
-         <width>113</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLineEdit {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 0 8px;
-    background: white;
-    selection-background-color: darkgray;
-}</string>
-       </property>
-      </widget>
       <widget class="QPushButton" name="pb_ajouter_2">
        <property name="geometry">
         <rect>
-         <x>500</x>
-         <y>290</y>
-         <width>186</width>
-         <height>31</height>
+         <x>860</x>
+         <y>520</y>
+         <width>381</width>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -1039,7 +1088,7 @@ QGroupBox::title {
     border-width: 2px;
     border-radius: 10px;
     border-color: beige;
-    font: bold 14px;
+    font: bold 20px;
     min-width: 10em;
     padding: 6px;
 }</string>
@@ -1051,11 +1100,14 @@ QGroupBox::title {
       <widget class="QLabel" name="label_17">
        <property name="geometry">
         <rect>
-         <x>200</x>
-         <y>110</y>
-         <width>61</width>
-         <height>51</height>
+         <x>270</x>
+         <y>240</y>
+         <width>111</width>
+         <height>71</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>ID</string>
@@ -1064,14 +1116,16 @@ QGroupBox::title {
       <widget class="QLineEdit" name="lineEdit_id">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>130</y>
-         <width>113</width>
-         <height>20</height>
+         <x>440</x>
+         <y>260</y>
+         <width>211</width>
+         <height>51</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -1083,10 +1137,10 @@ QGroupBox::title {
       <widget class="QGroupBox" name="groupBox_5">
        <property name="geometry">
         <rect>
-         <x>9</x>
+         <x>20</x>
          <y>9</y>
-         <width>721</width>
-         <height>351</height>
+         <width>1491</width>
+         <height>641</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -1109,38 +1163,53 @@ QGroupBox::title {
        <property name="title">
         <string>ajouter un abonnement</string>
        </property>
+       <widget class="QDateEdit" name="dateEdit">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>100</y>
+          <width>311</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>120</y>
+         <width>191</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+       </property>
       </widget>
       <widget class="QLabel" name="label_35">
        <property name="geometry">
         <rect>
-         <x>0</x>
+         <x>-6</x>
          <y>0</y>
-         <width>731</width>
-         <height>421</height>
+         <width>1531</width>
+         <height>671</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
-       </property>
-      </widget>
-      <widget class="QComboBox" name="comboBox">
-       <property name="geometry">
-        <rect>
-         <x>60</x>
-         <y>50</y>
-         <width>121</width>
-         <height>22</height>
-        </rect>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_35</zorder>
       <zorder>groupBox_5</zorder>
       <zorder>label_9</zorder>
       <zorder>label_10</zorder>
-      <zorder>lineEdit_nom_2</zorder>
       <zorder>pb_ajouter_2</zorder>
       <zorder>label_17</zorder>
       <zorder>lineEdit_id</zorder>
@@ -1153,27 +1222,27 @@ QGroupBox::title {
       <widget class="QTableView" name="tababonnement">
        <property name="geometry">
         <rect>
-         <x>0</x>
+         <x>90</x>
          <y>70</y>
-         <width>751</width>
-         <height>301</height>
+         <width>1321</width>
+         <height>561</height>
         </rect>
        </property>
       </widget>
       <widget class="QLabel" name="label_36">
        <property name="geometry">
         <rect>
-         <x>-6</x>
-         <y>-1</y>
-         <width>741</width>
-         <height>421</height>
+         <x>0</x>
+         <y>0</y>
+         <width>1521</width>
+         <height>671</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_36</zorder>
@@ -1186,14 +1255,17 @@ QGroupBox::title {
       <widget class="QLineEdit" name="lineedit_cin_3">
        <property name="geometry">
         <rect>
-         <x>190</x>
-         <y>50</y>
-         <width>113</width>
-         <height>20</height>
+         <x>690</x>
+         <y>80</y>
+         <width>241</width>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+	font: 26pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -1205,11 +1277,14 @@ QGroupBox::title {
       <widget class="QLabel" name="label_16">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>50</y>
-         <width>71</width>
-         <height>31</height>
+         <x>420</x>
+         <y>60</y>
+         <width>191</width>
+         <height>91</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>CIN</string>
@@ -1218,10 +1293,10 @@ QGroupBox::title {
       <widget class="QPushButton" name="pb_supprimer_2">
        <property name="geometry">
         <rect>
-         <x>240</x>
-         <y>132</y>
-         <width>186</width>
-         <height>31</height>
+         <x>960</x>
+         <y>410</y>
+         <width>281</width>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -1245,8 +1320,8 @@ QGroupBox::title {
         <rect>
          <x>9</x>
          <y>10</y>
-         <width>721</width>
-         <height>341</height>
+         <width>1501</width>
+         <height>621</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -1273,17 +1348,17 @@ QGroupBox::title {
       <widget class="QLabel" name="label_37">
        <property name="geometry">
         <rect>
-         <x>-6</x>
+         <x>0</x>
          <y>0</y>
-         <width>741</width>
-         <height>421</height>
+         <width>1521</width>
+         <height>671</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_37</zorder>
@@ -1301,8 +1376,8 @@ QGroupBox::title {
         <rect>
          <x>9</x>
          <y>9</y>
-         <width>721</width>
-         <height>361</height>
+         <width>1501</width>
+         <height>641</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -1325,14 +1400,47 @@ QGroupBox::title {
        <property name="title">
         <string>modifier un abonnement</string>
        </property>
+       <widget class="QDateEdit" name="dateEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>890</x>
+          <y>90</y>
+          <width>241</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="modif_abonnement_cin">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>100</y>
+          <width>221</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QPushButton" name="pb_modif_abonnemnt">
        <property name="geometry">
         <rect>
-         <x>510</x>
-         <y>310</y>
-         <width>186</width>
-         <height>31</height>
+         <x>1040</x>
+         <y>510</y>
+         <width>241</width>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -1351,33 +1459,17 @@ QGroupBox::title {
         <string>modifier</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="modif_abonnemnt_date">
-       <property name="geometry">
-        <rect>
-         <x>420</x>
-         <y>70</y>
-         <width>113</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLineEdit {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 0 8px;
-    background: white;
-    selection-background-color: darkgray;
-}</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_14">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>60</y>
-         <width>81</width>
-         <height>31</height>
+         <x>670</x>
+         <y>100</y>
+         <width>131</width>
+         <height>61</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>Date</string>
@@ -1386,11 +1478,14 @@ QGroupBox::title {
       <widget class="QLabel" name="label_20">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>130</y>
-         <width>61</width>
-         <height>51</height>
+         <x>200</x>
+         <y>300</y>
+         <width>111</width>
+         <height>71</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>ID</string>
@@ -1399,46 +1494,31 @@ QGroupBox::title {
       <widget class="QLabel" name="label_21">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>60</y>
-         <width>71</width>
-         <height>41</height>
+         <x>200</x>
+         <y>100</y>
+         <width>101</width>
+         <height>61</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>CIN</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="modif_abonnement_cin">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>70</y>
-         <width>113</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLineEdit {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 0 8px;
-    background: white;
-    selection-background-color: darkgray;
-}</string>
-       </property>
-      </widget>
       <widget class="QLineEdit" name="modif_abonnemnt_id">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>150</y>
-         <width>113</width>
-         <height>20</height>
+         <x>360</x>
+         <y>310</y>
+         <width>221</width>
+         <height>61</height>
         </rect>
        </property>
        <property name="styleSheet">
         <string notr="true">QLineEdit {
+	font: 20pt &quot;MS Shell Dlg 2&quot;;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 0 8px;
@@ -1450,27 +1530,25 @@ QGroupBox::title {
       <widget class="QLabel" name="label_38">
        <property name="geometry">
         <rect>
-         <x>-6</x>
-         <y>-1</y>
-         <width>741</width>
-         <height>421</height>
+         <x>0</x>
+         <y>0</y>
+         <width>1521</width>
+         <height>671</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_38</zorder>
       <zorder>groupBox_2</zorder>
       <zorder>pb_modif_abonnemnt</zorder>
-      <zorder>modif_abonnemnt_date</zorder>
       <zorder>label_14</zorder>
       <zorder>label_20</zorder>
       <zorder>label_21</zorder>
-      <zorder>modif_abonnement_cin</zorder>
       <zorder>modif_abonnemnt_id</zorder>
      </widget>
      <widget class="QWidget" name="tab_13">
@@ -1480,10 +1558,10 @@ QGroupBox::title {
       <widget class="QGroupBox" name="groupBox_7">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>20</x>
          <y>9</y>
-         <width>711</width>
-         <height>401</height>
+         <width>1491</width>
+         <height>631</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -1509,10 +1587,10 @@ QGroupBox::title {
        <widget class="QWidget" name="layoutWidget_2">
         <property name="geometry">
          <rect>
-          <x>490</x>
+          <x>890</x>
           <y>70</y>
-          <width>204</width>
-          <height>25</height>
+          <width>381</width>
+          <height>121</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
@@ -1549,9 +1627,9 @@ QGroupBox::title {
         <property name="geometry">
          <rect>
           <x>140</x>
-          <y>10</y>
-          <width>327</width>
-          <height>368</height>
+          <y>70</y>
+          <width>661</width>
+          <height>561</height>
          </rect>
         </property>
         <layout class="QFormLayout" name="formLayout">
@@ -1657,40 +1735,220 @@ QGroupBox::title {
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>731</width>
-         <height>421</height>
+         <width>1521</width>
+         <height>671</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_39</zorder>
       <zorder>groupBox_7</zorder>
      </widget>
     </widget>
-    <widget class="QLabel" name="label_29">
+    <widget class="QLabel" name="label_34">
      <property name="geometry">
       <rect>
        <x>-6</x>
        <y>-1</y>
-       <width>1024</width>
-       <height>576</height>
+       <width>1531</width>
+       <height>961</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../Downloads/76765592_3409434282430241_7790646126016724992_n.jpg</pixmap>
+      <pixmap>../../Downloads/back.png</pixmap>
      </property>
     </widget>
-    <zorder>label_29</zorder>
+    <zorder>label_34</zorder>
     <zorder>tabWidget_3</zorder>
    </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>191</width>
+     <height>961</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>gestion des employes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pb_ajouter {
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>gestion des vehicules</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pb_ajouter {
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>gestion des voyages</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_16">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pb_ajouter {
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>gestion des clients</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_17">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>679</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pb_ajouter {
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>gestion des lignes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>780</y>
+      <width>171</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#pb_ajouter {
+    background-color: red;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 20px;
+    min-width: 10em;
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>gestion des maintenances</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_40">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>5</y>
+      <width>191</width>
+      <height>961</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/back.png</pixmap>
+    </property>
+   </widget>
+   <zorder>label_40</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>pushButton_14</zorder>
+   <zorder>pushButton_15</zorder>
+   <zorder>pushButton_16</zorder>
+   <zorder>pushButton_17</zorder>
+   <zorder>pushButton_18</zorder>
   </widget>
  </widget>
  <resources/>

@@ -3,6 +3,11 @@
 #include "ligne.h"
 #include "station.h"
 #include <QMessageBox>
+#include "med.h"
+#include "rouaa.h"
+#include "amira.h"
+#include "adhir.h"
+#include "malek.h"
 nadhir::nadhir(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::nadhir)
@@ -210,4 +215,40 @@ void nadhir::on_pushButton_2_clicked()
     int numstation = ui->lineEdit_2->text().toInt();
     tmpLigne.affecter(refligne,numstation);
     ui->tableViewaffecter->setModel(tmpLigne.AfficherAffecter());
+}
+
+void nadhir::on_pushButton_5_clicked()
+{
+    rouaa a;
+    hide();
+    a.exec();
+}
+
+void nadhir::on_pushButton_14_clicked()
+{
+    adhir a;
+    hide();
+    a.exec();
+}
+
+void nadhir::on_pushButton_15_clicked()
+{
+    amira a;
+    hide();
+    a.exec();
+}
+
+void nadhir::on_pushButton_16_clicked()
+{
+    med a;
+    hide();
+    a.exec();
+}
+
+void nadhir::on_pushButton_18_clicked()
+{
+
+    malek a;
+    hide();
+    a.exec();
 }

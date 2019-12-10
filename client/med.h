@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "abonne.h"
 #include "abonnement.h"
+#include <QMediaPlayer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class med; }
@@ -16,6 +17,10 @@ class med : public QDialog
 public:
     med(QWidget *parent = nullptr);
     ~med();
+    QMediaPlayer * correct=new QMediaPlayer();
+    QMediaPlayer * incorrect=new QMediaPlayer();
+
+
 
 private slots:
     void on_pb_ajouter_clicked();
@@ -32,7 +37,6 @@ private slots:
 
     void on_pb_modif_clicked();
 
-    void on_pushButton_recherche_nom_clicked();
 
     void on_pushButton_clicked();
 
@@ -57,6 +61,18 @@ private slots:
     void on_radioButton_2_toggled(bool checked);
 
     void on_statistique_clicked();
+
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_14_clicked();
+
+    void on_pushButton_15_clicked();
+
+    void on_pushButton_17_clicked();
+
+    void on_pushButton_18_clicked();
+
+    void on_recherche_nom_textChanged(const QString &arg1);
 
 private:
     Ui::med *ui;

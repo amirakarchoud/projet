@@ -107,6 +107,16 @@ private slots:
 
     void on_pushButton_7_clicked();
 
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_14_clicked();
+
+    void on_pushButton_16_clicked();
+
+    void on_pushButton_17_clicked();
+
+    void on_pushButton_18_clicked();
+
 private:
     Ui::amira *ui;
     Annonce tmpannonce;

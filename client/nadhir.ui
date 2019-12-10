@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1391</width>
-    <height>701</height>
+    <width>1711</width>
+    <height>971</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,14 +16,14 @@
   <widget class="QTabWidget" name="tabWidget_2">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>180</x>
      <y>40</y>
-     <width>721</width>
-     <height>411</height>
+     <width>1711</width>
+     <height>971</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="tab_4">
     <attribute name="title">
@@ -39,7 +39,7 @@
       </rect>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -173,22 +173,6 @@
         </rect>
        </property>
       </widget>
-      <widget class="QLabel" name="label_10">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>-30</y>
-         <width>701</width>
-         <height>401</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
-       </property>
-      </widget>
       <widget class="QTableView" name="tableViewaffecter">
        <property name="geometry">
         <rect>
@@ -197,6 +181,22 @@
          <width>256</width>
          <height>192</height>
         </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>681</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_10</zorder>
@@ -220,7 +220,7 @@
       <widget class="QTableView" name="tabligne">
        <property name="geometry">
         <rect>
-         <x>0</x>
+         <x>20</x>
          <y>60</y>
          <width>341</width>
          <height>201</height>
@@ -368,19 +368,19 @@ background:url(images/boutonnoir2.png) no-repeat;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>721</width>
-         <height>291</height>
+         <width>681</width>
+         <height>351</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
-      <zorder>label_13</zorder>
       <zorder>label_14</zorder>
+      <zorder>label_13</zorder>
       <zorder>tabligne</zorder>
       <zorder>pushButton_recherche</zorder>
       <zorder>lineEdit_recheche</zorder>
@@ -432,23 +432,23 @@ background:url(images/boutonnoir2.png) no-repeat;
         <string>Supprimer</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_15">
+      <widget class="QLabel" name="label_21">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>711</width>
-         <height>341</height>
+         <x>-10</x>
+         <y>-10</y>
+         <width>681</width>
+         <height>351</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
-      <zorder>label_15</zorder>
+      <zorder>label_21</zorder>
       <zorder>ref_delete</zorder>
       <zorder>label_4</zorder>
       <zorder>pb_supprimer</zorder>
@@ -562,23 +562,23 @@ background:url(images/boutonnoir2.png) no-repeat;
         </rect>
        </property>
       </widget>
-      <widget class="QLabel" name="label_16">
+      <widget class="QLabel" name="label_22">
        <property name="geometry">
         <rect>
-         <x>0</x>
+         <x>-10</x>
          <y>0</y>
-         <width>711</width>
-         <height>351</height>
+         <width>691</width>
+         <height>421</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
-      <zorder>label_16</zorder>
+      <zorder>label_22</zorder>
       <zorder>lineEdit_number_modif</zorder>
       <zorder>pb_modifier</zorder>
       <zorder>lineEdit_id_modif</zorder>
@@ -605,7 +605,7 @@ background:url(images/boutonnoir2.png) no-repeat;
       </rect>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab_6">
       <attribute name="title">
@@ -675,15 +675,15 @@ background:url(images/boutonnoir2.png) no-repeat;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>711</width>
-         <height>331</height>
+         <width>681</width>
+         <height>351</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_17</zorder>
@@ -820,7 +820,7 @@ background:url(images/boutonnoir2.png) no-repeat;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>701</width>
+         <width>681</width>
          <height>351</height>
         </rect>
        </property>
@@ -828,7 +828,7 @@ background:url(images/boutonnoir2.png) no-repeat;
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_18</zorder>
@@ -911,7 +911,7 @@ background:url(images/boutonnoir2.png) no-repeat;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>711</width>
+         <width>681</width>
          <height>351</height>
         </rect>
        </property>
@@ -919,7 +919,7 @@ background:url(images/boutonnoir2.png) no-repeat;
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_19</zorder>
@@ -972,9 +972,9 @@ background:url(images/boutonnoir2.png) no-repeat;
       <widget class="QLabel" name="label_20">
        <property name="geometry">
         <rect>
-         <x>-10</x>
+         <x>0</x>
          <y>0</y>
-         <width>711</width>
+         <width>681</width>
          <height>351</height>
         </rect>
        </property>
@@ -982,7 +982,7 @@ background:url(images/boutonnoir2.png) no-repeat;
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../../Downloads/78634496_719301035223392_5189077133661569024_n.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
       <zorder>label_20</zorder>
@@ -992,6 +992,132 @@ background:url(images/boutonnoir2.png) no-repeat;
      </widget>
     </widget>
    </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>171</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>66</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des employes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>106</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des vehicules</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>146</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des voyages</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_16">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>185</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des clients</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_17">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>226</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des lignes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>266</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des maintenances</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>630</y>
+     <width>681</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Downloads/back.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>630</y>
+     <width>681</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../Downloads/back.png</pixmap>
+   </property>
   </widget>
  </widget>
  <resources/>

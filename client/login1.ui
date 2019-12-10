@@ -6,80 +6,90 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1989</width>
+    <height>1459</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>150</y>
-      <width>71</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>mot de passe:</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>120</y>
-      <width>113</width>
-      <height>20</height>
+      <x>702</x>
+      <y>450</y>
+      <width>831</width>
+      <height>131</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>120</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>identifiant:</string>
+    <property name="styleSheet">
+     <string notr="true"> background-color: transparent;
+font: 72pt &quot;MS Shell Dlg 2&quot;;
+border: none;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>190</y>
-      <width>141</width>
-      <height>41</height>
+      <x>540</x>
+      <y>870</y>
+      <width>1001</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="text">
-     <string>connecter</string>
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>150</y>
-      <width>113</width>
-      <height>20</height>
+      <x>702</x>
+      <y>649</y>
+      <width>841</width>
+      <height>131</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: transparent;
+font: 72pt &quot;MS Shell Dlg 2&quot;;
+border: none;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
    </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>-4</x>
+      <y>2</y>
+      <width>1991</width>
+      <height>1441</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/login.png</pixmap>
+    </property>
+   </widget>
+   <zorder>label_3</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>lineEdit_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1989</width>
      <height>17</height>
     </rect>
    </property>

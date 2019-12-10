@@ -30,6 +30,16 @@ private slots:
     void on_pushButton_4_clicked();
 
 
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_14_clicked();
+
+    void on_pushButton_15_clicked();
+
+    void on_pushButton_16_clicked();
+
+    void on_pushButton_17_clicked();
+
 private:
     Ui::malek *ui;
     QPropertyAnimation *animation;

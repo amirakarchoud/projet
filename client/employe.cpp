@@ -8,13 +8,14 @@ prenom="";
 grade="";
 cin=0;
 }
-Employe::Employe (QString nom,QString prenom,QString grade,int cin)
+Employe::Employe (QString nom,QString prenom,QString grade,int cin,QString m)
 {
 
   this->nom=nom;
   this->prenom=prenom;
   this->grade=grade;
   this->cin=cin;
+    mdp=m;
 }
 QString Employe::get_nom(){return  nom;}
 QString Employe::get_prenom(){return prenom;}
@@ -25,13 +26,14 @@ bool Employe::ajouter()
 {
 QSqlQuery query;
 QString res= QString::number(cin);
-query.prepare("INSERT INTO employe ( NOM, PRENOM,GRADE,CIN) "
-                    "VALUES ( :nom, :prenom, :grade, :cin)");
+query.prepare("INSERT INTO employe ( NOM, PRENOM,GRADE,CIN,MDP) "
+                    "VALUES ( :nom, :prenom, :grade, :cin, :mdp)");
 
 query.bindValue(":nom", nom);
 query.bindValue(":prenom", prenom);
 query.bindValue(":grade", grade);
 query.bindValue(":cin", res);
+query.bindValue(":mdp", mdp);
 
 return    query.exec();
 }

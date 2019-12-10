@@ -1,19 +1,20 @@
 #include "abonnement.h"
 #include <QDebug>
+#include <QDate>
 Abonnement::Abonnement()
 {
 cin=0;
-date="";
+
 id=0;
 }
-Abonnement::Abonnement(int cin,int id,QString date)
+Abonnement::Abonnement(int cin,int id,QDate date)
 {
   this->cin=cin;
   this->date=date;
   this->id=id;
 
 }
-QString Abonnement::get_date(){return  date;}
+QDate Abonnement::get_date(){return  date;}
 int Abonnement::get_cin(){return  cin;}
 int Abonnement::get_id(){return  id;}
 
@@ -41,16 +42,16 @@ QSqlQueryModel * Abonnement::afficher()
 
 model->setQuery("select * from abonnement a, abonne b where (a.cin=b.cin)");
 //afficher
-model->setHeaderData(0, Qt::Horizontal, QObject::tr("cin"));
-model->setHeaderData(1, Qt::Horizontal, QObject::tr("date"));
-model->setHeaderData(2, Qt::Horizontal, QObject::tr("id"));
-model->setHeaderData(3, Qt::Horizontal, QObject::tr("cin"));
-model->setHeaderData(4, Qt::Horizontal, QObject::tr("nom"));
-model->setHeaderData(5, Qt::Horizontal, QObject::tr("prenom "));
-model->setHeaderData(6, Qt::Horizontal, QObject::tr("numero"));
-model->setHeaderData(7, Qt::Horizontal, QObject::tr("adresse"));
-model->setHeaderData(8, Qt::Horizontal, QObject::tr("profession"));
-model->setHeaderData(9, Qt::Horizontal, QObject::tr("email"));
+model->setHeaderData(0, Qt::Horizontal, QObject::tr("Cin"));
+model->setHeaderData(1, Qt::Horizontal, QObject::tr("Date"));
+model->setHeaderData(2, Qt::Horizontal, QObject::tr("Id"));
+model->setHeaderData(3, Qt::Horizontal, QObject::tr("Cin"));
+model->setHeaderData(4, Qt::Horizontal, QObject::tr("Nom"));
+model->setHeaderData(5, Qt::Horizontal, QObject::tr("Prenom "));
+model->setHeaderData(6, Qt::Horizontal, QObject::tr("Numero"));
+model->setHeaderData(7, Qt::Horizontal, QObject::tr("Adresse"));
+model->setHeaderData(8, Qt::Horizontal, QObject::tr("Sexe"));
+model->setHeaderData(9, Qt::Horizontal, QObject::tr("Email"));
 
     return model;
 }
@@ -72,7 +73,7 @@ bool Abonnement::recherche_cin(int)
     query.bindValue(":cin", res);
     return query.exec();
 }
-bool Abonnement::modifier(int cin, QString date ,int id)
+bool Abonnement::modifier(int cin, QDate date ,int id)
 {
     QSqlQuery query;
     QString res= QString::number(cin);

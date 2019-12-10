@@ -3,13 +3,18 @@
 #include "reclamation.h"
 #include "fiche.h"
 #include <QMessageBox>
+#include "med.h"
+#include "rouaa.h"
+#include "amira.h"
+#include "adhir.h"
+#include "nadhir.h"
+
 malek::malek(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::malek)
 {
 ui->setupUi(this);
 
-ui->stackedWidget_2->setCurrentIndex(2);
 
 ui->tabb->setModel(tmpr.afficher());
 ui->tableview->setModel(tmpc.afficher());
@@ -20,17 +25,7 @@ malek::~malek()
 {
     delete ui;
 }
-void malek::on_pushButton_2_clicked()
-{
-    ui->stackedWidget_2->setCurrentIndex(0);
 
-
-}
-void malek::on_pushButton_clicked()
-{
-    ui->stackedWidget_2->setCurrentIndex(1);
-
-}
 void malek::on_tabWidget_currentChanged(int index)
 {
     ui->tabb->setModel(tmpr.afficher());
@@ -178,3 +173,38 @@ QMessageBox::information(nullptr, QObject::tr("Ajouter une fiche"),
       }}
 
 
+
+void malek::on_pushButton_5_clicked()
+{
+    rouaa a;
+    hide();
+    a.exec();
+}
+
+void malek::on_pushButton_14_clicked()
+{
+    adhir a;
+    hide();
+    a.exec();
+}
+
+void malek::on_pushButton_15_clicked()
+{
+    amira a;
+    hide();
+    a.exec();
+}
+
+void malek::on_pushButton_16_clicked()
+{
+    med a;
+    hide();
+    a.exec();
+}
+
+void malek::on_pushButton_17_clicked()
+{
+    nadhir a;
+    hide();
+    a.exec();
+}

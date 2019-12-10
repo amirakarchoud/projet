@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>662</width>
-    <height>411</height>
+    <width>1711</width>
+    <height>971</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,10 @@
   <widget class="QTabWidget" name="tabemploye">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>661</width>
-     <height>411</height>
+     <x>170</x>
+     <y>40</y>
+     <width>1711</width>
+     <height>971</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -82,14 +82,14 @@ QTabBar::tab:selected {
     <widget class="QTabWidget" name="setModel">
      <property name="geometry">
       <rect>
-       <x>50</x>
-       <y>20</y>
-       <width>531</width>
-       <height>351</height>
+       <x>20</x>
+       <y>10</y>
+       <width>811</width>
+       <height>821</height>
       </rect>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -98,10 +98,10 @@ QTabBar::tab:selected {
       <widget class="QTableView" name="tabemploye_3">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>20</y>
-         <width>381</width>
-         <height>192</height>
+         <x>90</x>
+         <y>40</y>
+         <width>661</width>
+         <height>371</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -116,10 +116,10 @@ QTabBar::tab:selected {
       <widget class="QLineEdit" name="lineEdit_nom">
        <property name="geometry">
         <rect>
-         <x>130</x>
-         <y>30</y>
-         <width>113</width>
-         <height>20</height>
+         <x>220</x>
+         <y>80</y>
+         <width>161</width>
+         <height>21</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -135,28 +135,9 @@ QTabBar::tab:selected {
       <widget class="QLineEdit" name="lineEdit_prenom">
        <property name="geometry">
         <rect>
-         <x>130</x>
-         <y>60</y>
-         <width>113</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLineEdit {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 0 8px;
-    background: white;
-    selection-background-color: darkgray;
-}</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_grade">
-       <property name="geometry">
-        <rect>
-         <x>130</x>
-         <y>90</y>
-         <width>113</width>
+         <x>220</x>
+         <y>110</y>
+         <width>161</width>
          <height>20</height>
         </rect>
        </property>
@@ -173,9 +154,9 @@ QTabBar::tab:selected {
       <widget class="QLineEdit" name="lineEdit_cin">
        <property name="geometry">
         <rect>
-         <x>130</x>
-         <y>130</y>
-         <width>113</width>
+         <x>220</x>
+         <y>200</y>
+         <width>181</width>
          <height>20</height>
         </rect>
        </property>
@@ -192,8 +173,8 @@ QTabBar::tab:selected {
       <widget class="QPushButton" name="pb_ajouter_5">
        <property name="geometry">
         <rect>
-         <x>190</x>
-         <y>162</y>
+         <x>320</x>
+         <y>320</y>
          <width>186</width>
          <height>31</height>
         </rect>
@@ -218,8 +199,8 @@ QTabBar::tab:selected {
       <widget class="QLabel" name="label_20">
        <property name="geometry">
         <rect>
-         <x>80</x>
-         <y>30</y>
+         <x>150</x>
+         <y>80</y>
          <width>61</width>
          <height>16</height>
         </rect>
@@ -235,8 +216,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_21">
        <property name="geometry">
         <rect>
-         <x>80</x>
-         <y>60</y>
+         <x>150</x>
+         <y>120</y>
          <width>47</width>
          <height>13</height>
         </rect>
@@ -252,8 +233,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_22">
        <property name="geometry">
         <rect>
-         <x>80</x>
-         <y>90</y>
+         <x>160</x>
+         <y>160</y>
          <width>47</width>
          <height>13</height>
         </rect>
@@ -269,8 +250,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_23">
        <property name="geometry">
         <rect>
-         <x>80</x>
-         <y>130</y>
+         <x>160</x>
+         <y>210</y>
          <width>47</width>
          <height>13</height>
         </rect>
@@ -302,17 +283,112 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QComboBox" name="comboBoxgrade">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>150</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>ouvrier </string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>chauffeur</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>responsable rh</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>agent</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>responsable gestion</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>technicien</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>90</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Andalus&quot;;
+text-decoration: underline;</string>
+       </property>
+       <property name="text">
+        <string>mot de passe:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="mdp">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>120</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-1</y>
+         <width>831</width>
+         <height>601</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_40</zorder>
       <zorder>label_10</zorder>
       <zorder>tabemploye_3</zorder>
       <zorder>lineEdit_nom</zorder>
       <zorder>lineEdit_prenom</zorder>
-      <zorder>lineEdit_grade</zorder>
       <zorder>lineEdit_cin</zorder>
       <zorder>pb_ajouter_5</zorder>
       <zorder>label_20</zorder>
       <zorder>label_21</zorder>
       <zorder>label_22</zorder>
       <zorder>label_23</zorder>
+      <zorder>comboBoxgrade</zorder>
+      <zorder>label_25</zorder>
+      <zorder>mdp</zorder>
      </widget>
      <widget class="QWidget" name="tab_2">
       <attribute name="title">
@@ -328,21 +404,23 @@ text-decoration: underline;</string>
         </rect>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLabel" name="label_41">
        <property name="geometry">
         <rect>
          <x>-20</x>
-         <y>0</y>
-         <width>581</width>
-         <height>281</height>
+         <y>-5</y>
+         <width>851</width>
+         <height>821</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">
-background-image: url(:/bg.jpg);</string>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
-      <zorder>lineEdit</zorder>
+      <zorder>label_41</zorder>
       <zorder>tabemp</zorder>
      </widget>
      <widget class="QWidget" name="tab_3">
@@ -352,18 +430,18 @@ background-image: url(:/bg.jpg);</string>
       <widget class="QTableView" name="tabemploye_5">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>10</y>
-         <width>381</width>
-         <height>192</height>
+         <x>30</x>
+         <y>31</y>
+         <width>451</width>
+         <height>261</height>
         </rect>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_id_19">
        <property name="geometry">
         <rect>
-         <x>150</x>
-         <y>50</y>
+         <x>190</x>
+         <y>130</y>
          <width>131</width>
          <height>20</height>
         </rect>
@@ -381,8 +459,8 @@ background-image: url(:/bg.jpg);</string>
       <widget class="QPushButton" name="pb_ajouter_7">
        <property name="geometry">
         <rect>
-         <x>180</x>
-         <y>150</y>
+         <x>250</x>
+         <y>220</y>
          <width>186</width>
          <height>31</height>
         </rect>
@@ -407,8 +485,8 @@ background-image: url(:/bg.jpg);</string>
       <widget class="QLabel" name="label_28">
        <property name="geometry">
         <rect>
-         <x>110</x>
-         <y>50</y>
+         <x>130</x>
+         <y>130</y>
          <width>47</width>
          <height>13</height>
         </rect>
@@ -440,6 +518,23 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>-6</x>
+         <y>-11</y>
+         <width>611</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_42</zorder>
       <zorder>label_6</zorder>
       <zorder>tabemploye_5</zorder>
       <zorder>lineEdit_id_19</zorder>
@@ -453,7 +548,7 @@ text-decoration: underline;</string>
       <widget class="QLineEdit" name="lineEdit_cin_2">
        <property name="geometry">
         <rect>
-         <x>100</x>
+         <x>170</x>
          <y>90</y>
          <width>113</width>
          <height>20</height>
@@ -472,7 +567,7 @@ text-decoration: underline;</string>
       <widget class="QLineEdit" name="lineEdit_grade_2">
        <property name="geometry">
         <rect>
-         <x>100</x>
+         <x>170</x>
          <y>50</y>
          <width>113</width>
          <height>20</height>
@@ -491,7 +586,7 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_30">
        <property name="geometry">
         <rect>
-         <x>30</x>
+         <x>100</x>
          <y>50</y>
          <width>47</width>
          <height>13</height>
@@ -508,7 +603,7 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_31">
        <property name="geometry">
         <rect>
-         <x>30</x>
+         <x>110</x>
          <y>90</y>
          <width>47</width>
          <height>13</height>
@@ -525,8 +620,8 @@ text-decoration: underline;</string>
       <widget class="QPushButton" name="pb_ajouter_6">
        <property name="geometry">
         <rect>
-         <x>190</x>
-         <y>162</y>
+         <x>300</x>
+         <y>190</y>
          <width>186</width>
          <height>31</height>
         </rect>
@@ -552,7 +647,7 @@ text-decoration: underline;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>0</y>
+         <y>10</y>
          <width>501</width>
          <height>261</height>
         </rect>
@@ -567,6 +662,23 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>0</y>
+         <width>601</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_43</zorder>
       <zorder>label_7</zorder>
       <zorder>pb_ajouter_6</zorder>
       <zorder>lineEdit_cin_2</zorder>
@@ -581,8 +693,8 @@ text-decoration: underline;</string>
       <widget class="QLineEdit" name="lineEdit_cin_3">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>90</y>
+         <x>350</x>
+         <y>150</y>
          <width>113</width>
          <height>20</height>
         </rect>
@@ -591,8 +703,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_34">
        <property name="geometry">
         <rect>
-         <x>360</x>
-         <y>60</y>
+         <x>380</x>
+         <y>120</y>
          <width>47</width>
          <height>13</height>
         </rect>
@@ -608,8 +720,8 @@ text-decoration: underline;</string>
       <widget class="QPushButton" name="pb_ajouter_9">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>150</y>
+         <x>320</x>
+         <y>230</y>
          <width>186</width>
          <height>31</height>
         </rect>
@@ -634,10 +746,10 @@ text-decoration: underline;</string>
       <widget class="QTableView" name="tabemp_2">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>20</y>
-         <width>231</width>
-         <height>192</height>
+         <x>20</x>
+         <y>11</y>
+         <width>261</width>
+         <height>291</height>
         </rect>
        </property>
       </widget>
@@ -660,6 +772,23 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-1</y>
+         <width>591</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_44</zorder>
       <zorder>label_9</zorder>
       <zorder>tabemp_2</zorder>
       <zorder>lineEdit_cin_3</zorder>
@@ -812,6 +941,23 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>-6</x>
+         <y>-1</y>
+         <width>601</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_45</zorder>
       <zorder>label_8</zorder>
       <zorder>tabemp_6</zorder>
       <zorder>groupBox_5</zorder>
@@ -826,7 +972,7 @@ text-decoration: underline;</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>531</width>
+         <width>501</width>
          <height>321</height>
         </rect>
        </property>
@@ -985,6 +1131,26 @@ text-decoration: underline;</string>
         </item>
        </layout>
       </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>-6</x>
+         <y>-1</y>
+         <width>601</width>
+         <height>411</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_46</zorder>
+      <zorder>label_14</zorder>
+      <zorder>layoutWidget_2</zorder>
+      <zorder>layoutWidget</zorder>
      </widget>
     </widget>
     <widget class="QLabel" name="label_11">
@@ -1003,6 +1169,23 @@ text-decoration: underline;</string>
       <pixmap>:/76765592_3409434282430241_7790646126016724992_n.jpg</pixmap>
      </property>
     </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1131</width>
+       <height>961</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Downloads/back.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_39</zorder>
     <zorder>label_11</zorder>
     <zorder>setModel</zorder>
    </widget>
@@ -1013,10 +1196,10 @@ text-decoration: underline;</string>
     <widget class="QTabWidget" name="setModel_2">
      <property name="geometry">
       <rect>
-       <x>90</x>
-       <y>20</y>
-       <width>531</width>
-       <height>331</height>
+       <x>0</x>
+       <y>0</y>
+       <width>701</width>
+       <height>411</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -1076,37 +1259,18 @@ QTabBar::tab:selected {
       <widget class="QTableView" name="tabemploye_4">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>30</y>
-         <width>381</width>
-         <height>192</height>
+         <x>90</x>
+         <y>40</y>
+         <width>461</width>
+         <height>281</height>
         </rect>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_type">
-       <property name="geometry">
-        <rect>
-         <x>120</x>
-         <y>60</y>
-         <width>113</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLineEdit {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 0 8px;
-    background: white;
-    selection-background-color: darkgray;
-}</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_id">
        <property name="geometry">
         <rect>
-         <x>120</x>
-         <y>90</y>
+         <x>240</x>
+         <y>120</y>
          <width>113</width>
          <height>20</height>
         </rect>
@@ -1124,8 +1288,8 @@ QTabBar::tab:selected {
       <widget class="QPushButton" name="ajoute_cong">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>180</y>
+         <x>270</x>
+         <y>250</y>
          <width>186</width>
          <height>31</height>
         </rect>
@@ -1167,8 +1331,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_26">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>60</y>
+         <x>160</x>
+         <y>80</y>
          <width>51</width>
          <height>21</height>
         </rect>
@@ -1184,8 +1348,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_27">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>90</y>
+         <x>160</x>
+         <y>130</y>
          <width>47</width>
          <height>13</height>
         </rect>
@@ -1217,30 +1381,11 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_id_21">
-       <property name="geometry">
-        <rect>
-         <x>120</x>
-         <y>120</y>
-         <width>111</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLineEdit {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 0 8px;
-    background: white;
-    selection-background-color: darkgray;
-}</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_36">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>130</y>
+         <x>160</x>
+         <y>170</y>
          <width>47</width>
          <height>13</height>
         </rect>
@@ -1253,16 +1398,83 @@ text-decoration: underline;</string>
         <string>Cin</string>
        </property>
       </widget>
+      <widget class="QComboBox" name="comboBoxconge">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>160</y>
+         <width>81</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxtype">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>80</y>
+         <width>81</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>maternité</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>maladie</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>longue durée</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>engagement associatif</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mariage</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>annuel</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>-6</x>
+         <y>-1</y>
+         <width>701</width>
+         <height>391</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_16</zorder>
       <zorder>label_12</zorder>
       <zorder>tabemploye_4</zorder>
-      <zorder>lineEdit_type</zorder>
       <zorder>lineEdit_id</zorder>
       <zorder>ajoute_cong</zorder>
       <zorder>label_24</zorder>
       <zorder>label_26</zorder>
       <zorder>label_27</zorder>
-      <zorder>lineEdit_id_21</zorder>
       <zorder>label_36</zorder>
+      <zorder>comboBoxconge</zorder>
+      <zorder>comboBoxtype</zorder>
      </widget>
      <widget class="QWidget" name="tab_8">
       <attribute name="title">
@@ -1273,16 +1485,16 @@ text-decoration: underline;</string>
         <rect>
          <x>40</x>
          <y>30</y>
-         <width>381</width>
-         <height>192</height>
+         <width>571</width>
+         <height>311</height>
         </rect>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_id_20">
        <property name="geometry">
         <rect>
-         <x>160</x>
-         <y>90</y>
+         <x>190</x>
+         <y>130</y>
          <width>131</width>
          <height>20</height>
         </rect>
@@ -1300,8 +1512,8 @@ text-decoration: underline;</string>
       <widget class="QPushButton" name="pb_ajouter_8">
        <property name="geometry">
         <rect>
-         <x>180</x>
-         <y>152</y>
+         <x>280</x>
+         <y>210</y>
          <width>186</width>
          <height>31</height>
         </rect>
@@ -1326,8 +1538,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_29">
        <property name="geometry">
         <rect>
-         <x>120</x>
-         <y>90</y>
+         <x>130</x>
+         <y>130</y>
          <width>47</width>
          <height>13</height>
         </rect>
@@ -1359,6 +1571,23 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>-1</y>
+         <width>711</width>
+         <height>391</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_17</zorder>
       <zorder>label_3</zorder>
       <zorder>tabemploye_6</zorder>
       <zorder>lineEdit_id_20</zorder>
@@ -1372,10 +1601,10 @@ text-decoration: underline;</string>
       <widget class="QTableView" name="tabcong">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>30</y>
-         <width>361</width>
-         <height>192</height>
+         <x>50</x>
+         <y>40</y>
+         <width>511</width>
+         <height>311</height>
         </rect>
        </property>
       </widget>
@@ -1398,6 +1627,23 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>-16</x>
+         <y>-11</y>
+         <width>721</width>
+         <height>441</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_18</zorder>
       <zorder>label_4</zorder>
       <zorder>tabcong</zorder>
      </widget>
@@ -1408,8 +1654,8 @@ text-decoration: underline;</string>
       <widget class="QLineEdit" name="lineEdit_id_2">
        <property name="geometry">
         <rect>
-         <x>130</x>
-         <y>70</y>
+         <x>210</x>
+         <y>130</y>
          <width>113</width>
          <height>20</height>
         </rect>
@@ -1427,8 +1673,8 @@ text-decoration: underline;</string>
       <widget class="QLineEdit" name="lineEdit_type_2">
        <property name="geometry">
         <rect>
-         <x>130</x>
-         <y>30</y>
+         <x>210</x>
+         <y>80</y>
          <width>113</width>
          <height>20</height>
         </rect>
@@ -1446,8 +1692,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_32">
        <property name="geometry">
         <rect>
-         <x>46</x>
-         <y>30</y>
+         <x>110</x>
+         <y>80</y>
          <width>61</width>
          <height>21</height>
         </rect>
@@ -1463,8 +1709,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_33">
        <property name="geometry">
         <rect>
-         <x>50</x>
-         <y>70</y>
+         <x>110</x>
+         <y>130</y>
          <width>61</width>
          <height>20</height>
         </rect>
@@ -1480,8 +1726,8 @@ text-decoration: underline;</string>
       <widget class="QPushButton" name="ajoute_cong_2">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>162</y>
+         <x>310</x>
+         <y>210</y>
          <width>186</width>
          <height>31</height>
         </rect>
@@ -1522,6 +1768,23 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>-5</y>
+         <width>701</width>
+         <height>401</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_19</zorder>
       <zorder>label_2</zorder>
       <zorder>lineEdit_id_2</zorder>
       <zorder>lineEdit_type_2</zorder>
@@ -1536,8 +1799,8 @@ text-decoration: underline;</string>
       <widget class="QLineEdit" name="lineEdit_cin_4">
        <property name="geometry">
         <rect>
-         <x>320</x>
-         <y>60</y>
+         <x>380</x>
+         <y>110</y>
          <width>113</width>
          <height>20</height>
         </rect>
@@ -1555,8 +1818,8 @@ text-decoration: underline;</string>
       <widget class="QLabel" name="label_35">
        <property name="geometry">
         <rect>
-         <x>350</x>
-         <y>30</y>
+         <x>410</x>
+         <y>90</y>
          <width>47</width>
          <height>13</height>
         </rect>
@@ -1572,8 +1835,8 @@ text-decoration: underline;</string>
       <widget class="QPushButton" name="pb_ajouter_10">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>150</y>
+         <x>350</x>
+         <y>220</y>
          <width>186</width>
          <height>31</height>
         </rect>
@@ -1600,8 +1863,8 @@ text-decoration: underline;</string>
         <rect>
          <x>20</x>
          <y>20</y>
-         <width>261</width>
-         <height>192</height>
+         <width>311</width>
+         <height>241</height>
         </rect>
        </property>
       </widget>
@@ -1624,6 +1887,23 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>701</width>
+         <height>391</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_37</zorder>
       <zorder>label</zorder>
       <zorder>tabcong_2</zorder>
       <zorder>lineEdit_cin_4</zorder>
@@ -1637,8 +1917,8 @@ text-decoration: underline;</string>
       <widget class="QGroupBox" name="groupBox_4">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>10</y>
+         <x>360</x>
+         <y>20</y>
          <width>91</width>
          <height>71</height>
         </rect>
@@ -1693,8 +1973,8 @@ text-decoration: underline;</string>
       <widget class="QGroupBox" name="groupBox_3">
        <property name="geometry">
         <rect>
-         <x>300</x>
-         <y>110</y>
+         <x>370</x>
+         <y>130</y>
          <width>91</width>
          <height>80</height>
         </rect>
@@ -1755,8 +2035,8 @@ text-decoration: underline;</string>
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>281</width>
-         <height>171</height>
+         <width>331</width>
+         <height>241</height>
         </rect>
        </property>
        <property name="font">
@@ -1787,6 +2067,23 @@ text-decoration: underline;</string>
         <pixmap>../60342173_2276972439287605_1529191567795945472_n.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>701</width>
+         <height>391</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_38</zorder>
       <zorder>label_5</zorder>
       <zorder>groupBox_4</zorder>
       <zorder>groupBox_3</zorder>
@@ -1809,8 +2106,119 @@ text-decoration: underline;</string>
       <pixmap>:/76765592_3409434282430241_7790646126016724992_n.jpg</pixmap>
      </property>
     </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>-1</y>
+       <width>1551</width>
+       <height>911</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Downloads/back.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_15</zorder>
     <zorder>label_13</zorder>
     <zorder>setModel_2</zorder>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>171</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>66</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des employes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>106</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des vehicules</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>146</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des voyages</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_16">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>185</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des clients</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_17">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>226</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des lignes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>266</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des maintenances</string>
+    </property>
    </widget>
   </widget>
  </widget>

@@ -45,6 +45,16 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_14_clicked();
+
+    void on_pushButton_15_clicked();
+
+    void on_pushButton_16_clicked();
+
+    void on_pushButton_18_clicked();
+
 private:
     Ui::nadhir *ui;
     Ligne tmpLigne;

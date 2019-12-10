@@ -2,6 +2,7 @@
 #define LOGIN1_H
 
 #include <QMainWindow>
+#include <QMediaPlayer>
 
 namespace Ui {
 class login1;
@@ -14,6 +15,7 @@ class login1 : public QMainWindow
 public:
     explicit login1(QWidget *parent = nullptr);
     ~login1();
+    QMediaPlayer * mohamed=new QMediaPlayer();
 
 private slots:
     void on_pushButton_clicked();

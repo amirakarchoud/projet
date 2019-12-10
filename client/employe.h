@@ -6,7 +6,7 @@
 class Employe
 {public:
     Employe();
-    Employe(QString,QString,QString,int);
+    Employe(QString,QString,QString,int,QString);
     QString get_nom();
     QString get_prenom();
     QString get_grade();
@@ -21,7 +21,7 @@ class Employe
      QSqlQueryModel * rechercher(QString);
     QSqlQueryModel * trier(bool ph,bool croissant);
 private:
-    QString nom,prenom,grade;
+    QString nom,prenom,grade,mdp;
     int cin;
 };
 

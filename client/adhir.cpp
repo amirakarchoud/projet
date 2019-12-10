@@ -6,6 +6,11 @@
 #include <QString>
 #include <QIntValidator>
 #include "smtp.h"
+#include "med.h"
+#include "rouaa.h"
+#include "amira.h"
+#include "nadhir.h"
+#include "malek.h"
 
 
 adhir::adhir(QWidget *parent)
@@ -23,10 +28,13 @@ adhir::adhir(QWidget *parent)
 
          ui->con_vehicule->setValidator(new QIntValidator(0,9999,this));
          ui->chau_vehicule->setValidator(new QIntValidator(0,9999,this));
-         ui->    id_vehicule_panne->setValidator(new QIntValidator(0,9999,this));
+        // ui->    id_vehicule_panne->setValidator(new QIntValidator(0,9999,this));
          ui->    chauf_panne->setValidator(new QIntValidator(0,9999,this));
-         ui->type_panne->setInputMask("aaaaaaaaaaaaaaaaa");
-         ui->type_vehicule->setInputMask("aaaaaaaaaaaaaaaaa");
+
+         QSqlQueryModel * model= new QSqlQueryModel();
+
+         model->setQuery("select id from vehicule");
+         ui->comboBox_3->setModel(model);
 
 }
 
@@ -41,7 +49,7 @@ void adhir::on_pushButton_clicked()
     int id = ui->id_vehicule->text().toInt();
     int chau= ui->chau_vehicule->text().toInt();
     int con= ui->con_vehicule->text().toInt();
-    QString type= ui->type_vehicule->text();
+    QString type= ui->comboBox->currentText();
   vehicule v(id,chau,con ,type);
   bool test=v.ajouter();
   if(test)
@@ -61,9 +69,9 @@ QMessageBox::information(nullptr, QObject::tr("Ajouter un vehicule"),
 
 void adhir::on_pushButton_3_clicked()
 {
-    int idvehicule = ui->id_vehicule_panne->text().toInt();
+    int idvehicule = ui->comboBox_3->currentText().toInt();
     int chauvehicule= ui->chauf_panne->text().toInt();
-     QString typepanne= ui->type_panne->text();
+     QString typepanne= ui->comboBox_2->currentText();
   panne p (idvehicule,chauvehicule ,typepanne);
   bool test=p.ajouter();
   if(test)
@@ -100,7 +108,7 @@ void adhir::on_pushButton_2_clicked()
 
 void adhir::on_pushButton_4_clicked()
 {
-    long idvehicule=ui->id_vehicule_panne->text().toLong();
+    long idvehicule=ui->id1_vehicule_panne->text().toLong();
     bool test=tmppanne.supprimer(idvehicule);
     if(test)
     {ui->tabpanne->setModel(tmppanne.afficher());//refresh
@@ -210,4 +218,39 @@ void adhir::mailSent(QString status)
 {
     if(status == "Message sent")
         QMessageBox::warning( nullptr, tr( "Qt Simple SMTP client" ), tr( "Message sent!\n\n" ) );
+}
+
+void adhir::on_pushButton_5_clicked()
+{
+    rouaa a;
+    hide();
+    a.exec();
+}
+
+void adhir::on_pushButton_15_clicked()
+{
+    amira a;
+    hide();
+    a.exec();
+}
+
+void adhir::on_pushButton_16_clicked()
+{
+    med a;
+    hide();
+    a.exec();
+}
+
+void adhir::on_pushButton_17_clicked()
+{
+    nadhir a;
+    hide();
+    a.exec();
+}
+
+void adhir::on_pushButton_18_clicked()
+{
+    malek a;
+    hide();
+    a.exec();
 }

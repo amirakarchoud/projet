@@ -131,23 +131,27 @@ bool Abonne::modifier(int cin, int numero,QString adresse, QString email)
     return query.exec();
 }
 
-//pour rechercher par nom (pas verifier)
+//pour rechercher par nom (verifier)
 
 
 QSqlQueryModel *Abonne::cherch_nom(QString nom)
 {
     QSqlQueryModel * model= new QSqlQueryModel();
-    model->setQuery("select CIN, NOM, PRENOM, NUMERO, ADRESSE, PROFESSION, EMAIL from ABONNE where NOM='"+nom+"'");
-
-    model->setHeaderData(0, Qt::Horizontal, QObject::tr("cin"));
-    model->setHeaderData(1, Qt::Horizontal, QObject::tr("nom"));
-    model->setHeaderData(2, Qt::Horizontal, QObject::tr("prenom "));
-    model->setHeaderData(3, Qt::Horizontal, QObject::tr("numero"));
-    model->setHeaderData(4, Qt::Horizontal, QObject::tr("adresse"));
-    model->setHeaderData(5, Qt::Horizontal, QObject::tr("profession"));
-    model->setHeaderData(6, Qt::Horizontal, QObject::tr("email"));
-
-
+   // model->setQuery("select * from ABONNE where NOM like :nom");
+/*
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("Cin"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("Prenom "));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("Numero"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("Adresse"));
+    model->setHeaderData(5, Qt::Horizontal, QObject::tr("Profession"));
+    model->setHeaderData(6, Qt::Horizontal, QObject::tr("Email")); */
+    QSqlQuery * query = new QSqlQuery();
+    query->prepare("select * from abonne where nom like :nom");
+    nom = '%'+nom+'%';
+    query->bindValue(":nom",nom);
+    query->exec();
+    model->setQuery(*query);
     return model;
 }
 QSqlQueryModel * Abonne::afficher_tri_cin()

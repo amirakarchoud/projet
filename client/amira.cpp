@@ -14,6 +14,11 @@
 #include <QSound>
 #include <QSqlError>
 #include <QStatusBar>
+#include "med.h"
+#include "rouaa.h"
+#include "adhir.h"
+#include "nadhir.h"
+#include "malek.h"
 
 amira::amira(QWidget *parent)
     : QDialog(parent)
@@ -30,8 +35,8 @@ amira::amira(QWidget *parent)
     ui->tabticsup->setModel(tmpticket.afficher());
     ui->stationdep->setValidator(new QIntValidator(1, 1000, this));
     ui->stationar->setValidator(new QIntValidator(1, 1000, this));
-    ui->cinp->setValidator(new QIntValidator(1, 99999999, this));
-    ui->cinp->setMaxLength(8);
+    //ui->cinp->setValidator(new QIntValidator(1, 99999999, this));
+    //ui->cinp->setMaxLength(8);
     ui->idan->setMaxLength(9);
 
     ui->lineEdit_id->setMaxLength(9);
@@ -40,12 +45,18 @@ amira::amira(QWidget *parent)
     //this->setFixedSize(1000,1000);
    //this->centralWidget()->setFixedSize(10000,10000);
     //this->centralWidget()->resize(5000,5000);
-    QSqlQueryModel * model= new QSqlQueryModel(),* model1= new QSqlQueryModel(),* model2= new QSqlQueryModel();
+    QSqlQueryModel * model= new QSqlQueryModel(),* model1= new QSqlQueryModel(),* model2= new QSqlQueryModel(),* model3= new QSqlQueryModel(),* model4= new QSqlQueryModel();
 
     model->setQuery("select id_a from Annonce");
     ui->comboBoxmodan->setModel(model);
     model1->setQuery("select id_ticket from ticket");
     ui->comboBoxtic->setModel(model1);
+    model3->setQuery("select cin from abonne");
+    ui->comboBoxcinp->setModel(model3);
+
+    model4->setQuery("select numstation from station");
+    ui->comboBoxstar->setModel(model4);
+    ui->comboBoxstdep->setModel(model4);
     model2->setQuery("select id_a from annonce");
     ui->idantic->setModel(model2);
 
@@ -138,7 +149,7 @@ void amira::on_valdiersup_clicked()
 void amira::on_ajoutticket_clicked()
 {
     QString id = ui->idantic->currentText();
-    int c = ui->cinp->text().toInt();
+    int c = ui->comboBoxcinp->currentText().toInt();
     QString idt = ui->idt->text();
 
   Ticket t(idt,id,c);
@@ -491,11 +502,11 @@ void amira::on_lineEdit_5_textChanged(const QString &arg1)
 
 void amira::on_comboBoxmodan_currentIndexChanged(const QString &arg1)
 {
-   QString id=ui->comboBoxmodan->currentText();
+   //QString id=ui->comboBoxmodan->currentText();
    QSqlQuery query;
 
    query.prepare("select * from Annonce where ID_a = :id");
-   query.bindValue(":id", id);
+   query.bindValue(":id", arg1);
    if (query.exec())
    {
        while(query.next())
@@ -531,11 +542,11 @@ void amira::on_tabticsup_activated(const QModelIndex &index)
 
 void amira::on_comboBoxtic_currentIndexChanged(const QString &arg1)
 {
-    QString id=ui->comboBoxtic->currentText();
+   // QString id=ui->comboBoxtic->currentText();
     QSqlQuery query;
 
     query.prepare("select * from ticket where ID_ticket = :id");
-    query.bindValue(":id", id);
+    query.bindValue(":id", arg1);
     if (query.exec())
     {
         while(query.next())
@@ -566,4 +577,39 @@ void amira::mailSent(QString status)
 {
     if(status == "Message sent")
         QMessageBox::warning( nullptr, tr( "Qt Simple SMTP client" ), tr( "Message sent!\n\n" ) );
+}
+
+void amira::on_pushButton_5_clicked()
+{
+    rouaa a;
+    hide();
+    a.exec();
+}
+
+void amira::on_pushButton_14_clicked()
+{
+    adhir a;
+    hide();
+    a.exec();
+}
+
+void amira::on_pushButton_16_clicked()
+{
+    med a;
+    hide();
+    a.exec();
+}
+
+void amira::on_pushButton_17_clicked()
+{
+    nadhir a;
+    hide();
+    a.exec();
+}
+
+void amira::on_pushButton_18_clicked()
+{
+    malek a;
+    hide();
+    a.exec();
 }

@@ -5,6 +5,11 @@
 #include <QMessageBox>
 #include <QIntValidator>
 #include "smtp.h"
+#include "med.h"
+#include "amira.h"
+#include "adhir.h"
+#include "nadhir.h"
+#include "malek.h"
 rouaa::rouaa(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::rouaa)
@@ -21,13 +26,16 @@ rouaa::rouaa(QWidget *parent)
       ui->lineEdit_id->setValidator(new QIntValidator(0,99999,this));
       ui->lineEdit_nom->setInputMask("aaaaaaaaaaaaaaaaa");
          ui->lineEdit_prenom->setInputMask("aaaaaaaaaaaaaaaa");
-          ui->lineEdit_grade->setInputMask("aaaaaaaaaaaaaaaaa");
-           ui->lineEdit_type->setInputMask("aaaaaaaaaaaaaaaa");
+          //ui->lineEdit_grade->setInputMask("aaaaaaaaaaaaaaaaa");
+           //ui->lineEdit_type->setInputMask("aaaaaaaaaaaaaaaa");
            ui->tabemp->setModel(tmpconge.afficher());
            ui->tabemp_5->setModel(c.trier(true,true));
            ui->tabemp_6->setModel(e.trier(true,true));
 
+           QSqlQueryModel * model= new QSqlQueryModel();
 
+           model->setQuery("select CIN from conge");
+           ui->comboBoxconge->setModel(model);
 
 
 }
@@ -42,9 +50,10 @@ void rouaa::on_pb_ajouter_5_clicked()
 {
     QString nom= ui->lineEdit_nom->text();
     QString prenom= ui->lineEdit_prenom->text();
-      QString grade= ui->lineEdit_grade->text();
+      QString grade= ui->comboBoxgrade->currentText();
      int cin = ui->lineEdit_cin->text().toInt();
-  Employe e(nom,prenom,grade,cin);
+     QString mdp= ui->mdp->text();
+  Employe e(nom,prenom,grade,cin,mdp);
   bool test=e.ajouter();
   if(test)
 
@@ -110,9 +119,9 @@ void rouaa::on_pb_ajouter_7_clicked()
 void rouaa::on_ajoute_cong_clicked()
 {
 
-      QString type= ui->lineEdit_type->text();
+      QString type= ui->comboBoxtype->currentText();
      int id_conge = ui->lineEdit_id->text().toInt();
-      int cin = ui->lineEdit_id_21->text().toInt();
+      int cin = ui->comboBoxconge->currentText().toInt();
   Conge c(type,id_conge,cin);
   bool test=c.ajouter();
   if(test)
@@ -262,3 +271,38 @@ void rouaa::mailSent(QString status)
 
 
 
+
+void rouaa::on_pushButton_14_clicked()
+{
+    adhir a;
+    hide();
+    a.exec();
+}
+
+void rouaa::on_pushButton_15_clicked()
+{
+    amira a;
+    hide();
+    a.exec();
+}
+
+void rouaa::on_pushButton_16_clicked()
+{
+    med a;
+    hide();
+    a.exec();
+}
+
+void rouaa::on_pushButton_17_clicked()
+{
+    nadhir a;
+    hide();
+    a.exec();
+}
+
+void rouaa::on_pushButton_18_clicked()
+{
+    malek a;
+    hide();
+    a.exec();
+}

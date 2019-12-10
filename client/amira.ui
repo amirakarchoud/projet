@@ -16,7 +16,7 @@
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>190</x>
      <y>30</y>
      <width>1711</width>
      <height>971</height>
@@ -76,7 +76,7 @@
       </rect>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>2</number>
      </property>
      <property name="movable">
       <bool>false</bool>
@@ -92,9 +92,9 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>10</y>
+         <y>0</y>
          <width>1341</width>
-         <height>791</height>
+         <height>801</height>
         </rect>
        </property>
       </widget>
@@ -121,22 +121,6 @@
       <attribute name="title">
        <string>ajouter</string>
       </attribute>
-      <widget class="QLabel" name="label_4">
-       <property name="geometry">
-        <rect>
-         <x>30</x>
-         <y>0</y>
-         <width>471</width>
-         <height>321</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>../../OneDrive/Documents/images/bg.jpg</pixmap>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_5">
        <property name="geometry">
         <rect>
@@ -658,24 +642,43 @@ font: bold 10 px;</string>
         <string>ajouter</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_13">
+      <widget class="QComboBox" name="comboBoxstdep">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>-100</y>
-         <width>1401</width>
-         <height>941</height>
+         <x>810</x>
+         <y>330</y>
+         <width>69</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxstar">
+       <property name="geometry">
+        <rect>
+         <x>810</x>
+         <y>400</y>
+         <width>69</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_52">
+       <property name="geometry">
+        <rect>
+         <x>-6</x>
+         <y>-1</y>
+         <width>1321</width>
+         <height>731</height>
         </rect>
        </property>
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap>../images/bg.v1.jpg</pixmap>
+        <pixmap>../../Downloads/back.png</pixmap>
        </property>
       </widget>
-      <zorder>label_13</zorder>
-      <zorder>label_4</zorder>
+      <zorder>label_52</zorder>
       <zorder>label_5</zorder>
       <zorder>label_6</zorder>
       <zorder>idan</zorder>
@@ -692,6 +695,8 @@ font: bold 10 px;</string>
       <zorder>label_12</zorder>
       <zorder>numveh</zorder>
       <zorder>ajouter</zorder>
+      <zorder>comboBoxstdep</zorder>
+      <zorder>comboBoxstar</zorder>
      </widget>
      <widget class="QWidget" name="tab_5">
       <attribute name="title">
@@ -837,6 +842,23 @@ border-radius: 10px;</string>
         </rect>
        </property>
       </widget>
+      <widget class="QLabel" name="label_53">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_53</zorder>
       <zorder>label_30</zorder>
       <zorder>label_14</zorder>
       <zorder>valdiersup</zorder>
@@ -1604,6 +1626,23 @@ QGroupBox::title {
         </property>
        </widget>
       </widget>
+      <widget class="QLabel" name="label_54">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>1321</width>
+         <height>741</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_54</zorder>
       <zorder>label_36</zorder>
       <zorder>label_26</zorder>
       <zorder>label_27</zorder>
@@ -1833,6 +1872,23 @@ border-radius: 10px;</string>
         <pixmap>../images/bg.v1.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_62">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_62</zorder>
       <zorder>label_37</zorder>
       <zorder>label_16</zorder>
       <zorder>stastat</zorder>
@@ -1974,6 +2030,23 @@ border-radius: 10px;</string>
         <pixmap>../images/bg.v1.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_63">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_63</zorder>
       <zorder>label_38</zorder>
       <zorder>label_17</zorder>
       <zorder>pushButton_4</zorder>
@@ -2577,6 +2650,23 @@ border-radius: 10px;</string>
         <pixmap>../images/bg.v1.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_64">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_64</zorder>
       <zorder>label_39</zorder>
       <zorder>triidan</zorder>
       <zorder>tridate</zorder>
@@ -2584,6 +2674,25 @@ border-radius: 10px;</string>
       <zorder>trier</zorder>
      </widget>
     </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1541</width>
+       <height>921</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Downloads/back.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_2</zorder>
+    <zorder>label</zorder>
+    <zorder>tabWidget_2</zorder>
    </widget>
    <widget class="QWidget" name="tab_2">
     <attribute name="title">
@@ -2605,7 +2714,7 @@ border-radius: 10px;</string>
       </size>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab_9">
       <attribute name="title">
@@ -2653,6 +2762,23 @@ border-radius: 10px;</string>
         <pixmap>../images/bg.v1.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_65">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_65</zorder>
       <zorder>label_40</zorder>
       <zorder>label_3</zorder>
       <zorder>tabtic</zorder>
@@ -2872,19 +2998,6 @@ border-radius: 10px;</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;id annonce:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="cinp">
-       <property name="geometry">
-        <rect>
-         <x>670</x>
-         <y>90</y>
-         <width>211</width>
-         <height>61</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius: 10px;</string>
-       </property>
-      </widget>
       <widget class="QLineEdit" name="idt">
        <property name="geometry">
         <rect>
@@ -2945,15 +3058,42 @@ border-radius: 10px;</string>
         </rect>
        </property>
       </widget>
+      <widget class="QComboBox" name="comboBoxcinp">
+       <property name="geometry">
+        <rect>
+         <x>670</x>
+         <y>100</y>
+         <width>201</width>
+         <height>51</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_66">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_66</zorder>
       <zorder>label_41</zorder>
       <zorder>label_31</zorder>
       <zorder>label_32</zorder>
       <zorder>label_33</zorder>
       <zorder>label_34</zorder>
-      <zorder>cinp</zorder>
       <zorder>idt</zorder>
       <zorder>ajoutticket</zorder>
       <zorder>idantic</zorder>
+      <zorder>comboBoxcinp</zorder>
      </widget>
      <widget class="QWidget" name="tab_11">
       <attribute name="title">
@@ -3096,6 +3236,23 @@ border-radius: 10px;</string>
         </rect>
        </property>
       </widget>
+      <widget class="QLabel" name="label_67">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_67</zorder>
       <zorder>label_42</zorder>
       <zorder>label_18</zorder>
       <zorder>label_25</zorder>
@@ -3392,6 +3549,23 @@ QGroupBox::title {
         </property>
        </widget>
       </widget>
+      <widget class="QLabel" name="label_68">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_68</zorder>
       <zorder>label_43</zorder>
       <zorder>label_56</zorder>
       <zorder>label_57</zorder>
@@ -3924,6 +4098,23 @@ border-radius: 10px;</string>
         </rect>
        </property>
       </widget>
+      <widget class="QLabel" name="label_69">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_69</zorder>
       <zorder>label_45</zorder>
       <zorder>label_35</zorder>
       <zorder>lineEdit_10</zorder>
@@ -4527,6 +4718,23 @@ border-radius: 10px;
         <pixmap>../images/bg.v1.jpg</pixmap>
        </property>
       </widget>
+      <widget class="QLabel" name="label_70">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_70</zorder>
       <zorder>label_44</zorder>
       <zorder>label_58</zorder>
       <zorder>triticket</zorder>
@@ -5139,6 +5347,29 @@ border-radius: 10px;</string>
         <string>consulter</string>
        </property>
       </widget>
+      <widget class="QLabel" name="label_71">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_71</zorder>
+      <zorder>label_48</zorder>
+      <zorder>label_60</zorder>
+      <zorder>clientstat</zorder>
+      <zorder>annoncestat</zorder>
+      <zorder>tabstattic</zorder>
+      <zorder>consulterstattic</zorder>
      </widget>
      <widget class="QWidget" name="tab_17">
       <attribute name="title">
@@ -5191,6 +5422,26 @@ border-radius: 10px;</string>
         <string>actualiser</string>
        </property>
       </widget>
+      <widget class="QLabel" name="label_72">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_72</zorder>
+      <zorder>label_49</zorder>
+      <zorder>tabticaff</zorder>
+      <zorder>pushButton_7</zorder>
      </widget>
      <widget class="QWidget" name="tab_18">
       <attribute name="title">
@@ -5723,6 +5974,23 @@ border-radius: 10px;</string>
         </rect>
        </property>
       </widget>
+      <widget class="QLabel" name="label_73">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1321</width>
+         <height>731</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../Downloads/back.png</pixmap>
+       </property>
+      </widget>
+      <zorder>label_73</zorder>
       <zorder>label_15</zorder>
       <zorder>label_20</zorder>
       <zorder>port</zorder>
@@ -5758,8 +6026,119 @@ border-radius: 10px;</string>
       <pixmap>../images/76765592_3409434282430241_7790646126016724992_n.v1 (1).jpg</pixmap>
      </property>
     </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1541</width>
+       <height>921</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../Downloads/back.png</pixmap>
+     </property>
+    </widget>
+    <zorder>label_4</zorder>
     <zorder>label_19</zorder>
     <zorder>tabWidget_3</zorder>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>171</width>
+     <height>931</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>66</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des employes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>106</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des vehicules</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>146</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des voyages</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_16">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>185</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des clients</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_17">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>226</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des lignes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>266</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gestion des maintenances</string>
+    </property>
    </widget>
   </widget>
  </widget>

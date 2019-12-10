@@ -3,13 +3,14 @@
 #include <QString>
 #include <QSqlQuery>
 #include <QSqlQueryModel>
+#include <QDate>
 
 
 class Abonnement
 {public:
     Abonnement();
-    Abonnement(int,int,QString);
-    QString get_date();
+    Abonnement(int,int,QDate);
+    QDate get_date();
     int get_cin();
     int get_id();
 
@@ -17,10 +18,10 @@ class Abonnement
     QSqlQueryModel * afficher();
     bool supprimer(int);
     bool recherche_cin(int);
-    bool modifier(int,QString,int);
+    bool modifier(int,QDate,int);
     QSqlQueryModel * modelref();
 private:
-    QString date;
+    QDate date;
     int cin,id;
 };
 
